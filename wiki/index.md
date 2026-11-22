@@ -37,3 +37,8 @@ This wiki is the persistent, interlinked documentation layer for the Retail Inte
 - [Architecture reference](../docs/ARCHITECTURE.md)
 - [Verification report](../docs/VERIFICATION_REPORT.md)
 - [Licenses and data sources](../LICENSES_AND_DATA_SOURCES.md)
+
+## Student deliverables
+
+- [Self-learning and teamwork report](../docs/STUDENT_LEARNING_REPORT.md)
+- [Six-slide presentation](../docs/STUDENT_LEARNING_PRESENTATION.md)
