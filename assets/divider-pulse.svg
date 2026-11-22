@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="34" viewBox="0 0 1200 34" role="img" aria-labelledby="title desc">
+  <title id="title">Pulsing gradient bar divider</title>
+  <desc id="desc">A multi-color gradient bar expands and contracts like a telemetry signal.</desc>
+  <defs>
+    <linearGradient id="pulse" x1="0" x2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="0.25" stop-color="#8B5CF6"/>
+      <stop offset="0.5" stop-color="#EC4899"/>
+      <stop offset="0.75" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-300%" width="140%" height="700%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="34" fill="#07111F"/>
+  <rect x="100" y="14" width="1000" height="6" rx="3" fill="url(#pulse)" filter="url(#glow)">
+    <animate attributeName="x" values="100;260;100" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="1000;680;1000" dur="3.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>

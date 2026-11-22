@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180" role="img" aria-labelledby="title desc">
+  <title id="title">Animated data validation scanner</title>
+  <desc id="desc">A neon scanning line moves across a grid of authenticated source records.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="30" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V30" fill="none" stroke="#22D3EE" stroke-opacity="0.12"/>
+    </pattern>
+    <linearGradient id="scan" x1="0" x2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-50%" width="300%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="180" rx="18" fill="#07111F"/>
+  <rect x="18" y="18" width="864" height="144" fill="url(#grid)" stroke="#22D3EE" stroke-opacity="0.35"/>
+  <g fill="#E6F7FF" font-family="monospace" font-size="13">
+    <text x="38" y="48">MANIFEST.AUTH</text>
+    <text x="38" y="78">ROW.TYPE.CHECK</text>
+    <text x="38" y="108">REFERENCE.LOCK</text>
+    <text x="38" y="138">RECONCILE.OK</text>
+  </g>
+  <g fill="#10B981" font-family="monospace" font-size="13">
+    <text x="760" y="48">PASS</text>
+    <text x="760" y="78">PASS</text>
+    <text x="760" y="108">PASS</text>
+    <text x="760" y="138">PASS</text>
+  </g>
+  <rect x="0" y="18" width="90" height="144" fill="url(#scan)" filter="url(#glow)" opacity="0.75">
+    <animate attributeName="x" values="18;792;18" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>
