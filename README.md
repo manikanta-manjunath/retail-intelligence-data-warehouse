@@ -15,7 +15,7 @@ The project was executed against SQL Server 2022 CU27 on 22 November 2026:
 - A second identical ETL run inserted zero facts and made zero dimension updates.
 - Rolling-origin forecasting uses five backtest folds plus a final unseen 12-week test.
 - Problem detection and precision/recall reporting use 1,607 authenticated synthetic labels.
-- The complete automated suite passes 24/24 tests.
+- The complete automated suite passes 25/25 tests.
 
 See [the verification report](docs/VERIFICATION_REPORT.md) for actual metrics and limits.
 
@@ -108,15 +108,23 @@ Run tests that do not require SQL Server:
 
 The adapters preserve native source grain and write a manifest with input/output hashes.
 
-Walmart Recruiting weekly store-department sales:
+### Recommended real datasets
+
+1. [UCI Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii) — recommended for this project. It contains about 1.07 million real invoice lines from December 2009 through December 2011 and is licensed under CC BY 4.0. Download `online_retail_II.xlsx`; the adapter imports every worksheet and preserves cancellations/returns.
+2. [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail) — a smaller alternative with 541,909 invoice lines from December 2010 through December 2011, also CC BY 4.0. Download `Online Retail.xlsx`.
+3. [Walmart Recruiting — Store Sales Forecasting](https://www.kaggle.com/competitions/walmart-recruiting-store-sales-forecasting/data) — weekly department sales for 45 stores, plus holidays, markdowns and economic features. Kaggle login and acceptance of the competition rules are required before downloading `train.csv`, `features.csv` and `stores.csv`.
+
+Store downloaded files under `data/raw/public/` (ignored by Git). Do not commit the original datasets.
+
+Normalize Walmart weekly store-department sales:
 
     .venv/bin/python -m src.cli adapt-public --dataset walmart-weekly --primary /path/to/train.csv --features /path/to/features.csv --stores /path/to/stores.csv --output data/processed/walmart-weekly
 
-UCI Online Retail or Online Retail II:
+Normalize UCI Online Retail or Online Retail II:
 
     .venv/bin/python -m src.cli adapt-public --dataset uci-online-retail --primary /path/to/online_retail.xlsx --output data/processed/uci-online-retail
 
-These commands normalize files only. Public data is not silently mixed into canonical facts. Confirm the applicable Kaggle or UCI terms for the exact file you download.
+These commands normalize files only. Public data is not silently mixed into canonical facts because the Walmart dataset is weekly aggregate data while UCI is invoice-line data; neither contains all canonical inventory and supplier domains. Cite UCI when using its data and comply with Kaggle's competition rules.
 
 ## Safe operating rules
 

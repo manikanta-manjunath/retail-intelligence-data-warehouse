@@ -6,9 +6,12 @@ from pathlib import Path
 import pandas as pd
 
 
-def _read(path):
+def _read(path, all_sheets=False):
     path = Path(path)
     if path.suffix.lower() in {".xlsx", ".xls"}:
+        if all_sheets:
+            sheets = pd.read_excel(path, sheet_name=None)
+            return pd.concat(sheets.values(), ignore_index=True)
         return pd.read_excel(path)
     return pd.read_csv(path)
 
@@ -82,7 +85,7 @@ def adapt_walmart_weekly_sales(train_path, output, features_path=None, stores_pa
 
 def adapt_uci_online_retail(path, output):
     """Normalize UCI Online Retail/Online Retail II invoice lines and flag cancellations."""
-    source = _read(path)
+    source = _read(path, all_sheets=True)
     aliases = {
         "Invoice": "InvoiceNo",
         "Invoice No": "InvoiceNo",

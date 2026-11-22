@@ -38,7 +38,7 @@ The six OLAP operations, data-quality SQL and advanced reporting queries execute
 
 ## Automated tests
 
-The complete test command finished with 24 passed. Coverage includes historical generation, ground-truth integrity, rolling backtests, precision/recall, dynamic dashboard forecasting and the short-range fallback that prevents the configuration error shown during UI testing.
+The complete test command finished with 25 passed. Coverage includes historical generation, ground-truth integrity, multi-sheet real-data adaptation, rolling backtests, precision/recall, dynamic dashboard forecasting and the short-range fallback that prevents the configuration error shown during UI testing.
 
 Coverage includes deterministic generation across Python hash seeds, schema/type/range/reference validation, basket quarantine, duplicate handling, source-hash validation, non-destructive setup, public adapters, loaded warehouse counts, repeatability evidence and an SCD Type 2 change rolled back after its assertions.
 

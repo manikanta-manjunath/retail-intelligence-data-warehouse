@@ -53,3 +53,19 @@ def test_uci_adapter_preserves_cancellations_and_rejects_invalid(tmp_path):
     assert frame.IsCancellation.tolist() == [False, True]
     assert manifest["rejected_rows"] == 1
     assert (tmp_path / "out" / "rejected_rows.csv").exists()
+
+
+def test_uci_online_retail_ii_imports_every_workbook_sheet(tmp_path):
+    source = tmp_path / "online_retail_II.xlsx"
+    columns = {
+        "Invoice": ["100"], "StockCode": ["A"], "Description": ["Item"],
+        "Quantity": [1], "InvoiceDate": ["2010-01-01 10:00"],
+        "Price": [2.5], "Customer ID": [1], "Country": ["United Kingdom"],
+    }
+    with pd.ExcelWriter(source) as writer:
+        pd.DataFrame(columns).to_excel(writer, sheet_name="Year 2009-2010", index=False)
+        pd.DataFrame({**columns, "Invoice": ["101"]}).to_excel(
+            writer, sheet_name="Year 2010-2011", index=False
+        )
+    frame, _ = adapt_uci_online_retail(source, tmp_path / "out")
+    assert frame.InvoiceNo.tolist() == ["100", "101"]

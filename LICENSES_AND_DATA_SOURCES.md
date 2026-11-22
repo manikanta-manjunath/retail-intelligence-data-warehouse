@@ -9,8 +9,15 @@ This is an educational retail analytics platform inspired by common enterprise r
 | Dataset | Terms | Native grain | Suitable analysis | Missing domains | Current status |
 | --- | --- | --- | --- | --- | --- |
 | Canonical retail demonstration data | Project-generated educational data | Transactions, transaction lines, products, stores, generated customers, inventory snapshots, suppliers, shipments, promotions and dates | End-to-end warehouse, OLAP, generated basket rules, forecasting, RFM, anomalies, inventory and suppliers | Real operational behavior and external validity | Generated, loaded, reconciled and verified |
-| Walmart Recruiting - Store Sales Forecasting | Kaggle competition rules; user must confirm the exact download terms | Weekly sales per store and department | Weekly forecasting, holiday and markdown analysis | Transaction baskets, customers, line-item prices, inventory positions and supplier operations | Adapter implemented and fixture-tested; no actual file supplied or loaded |
-| UCI Online Retail / Online Retail II | Verify the exact edition; Online Retail II is distributed under CC BY 4.0 by UCI | One invoice line | Basket analysis, RFM, returns/cancellations and line-level anomalies | Physical stores, inventory, supplier shipments and complete promotions | Adapter implemented and fixture-tested; no actual file supplied or loaded |
+| [Walmart Recruiting - Store Sales Forecasting](https://www.kaggle.com/competitions/walmart-recruiting-store-sales-forecasting/data) | Subject to Kaggle competition rules; login and rule acceptance required | Weekly sales per store and department | Weekly forecasting, holiday and markdown analysis | Transaction baskets, customers, line-item prices, inventory positions and supplier operations | Adapter implemented and fixture-tested; no actual file supplied or loaded |
+| [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail) | CC BY 4.0; DOI 10.24432/C5BW33 | One invoice line; 541,909 instances | Basket analysis, RFM, returns/cancellations and line-level anomalies | Physical stores, inventory, supplier shipments and complete promotions | Adapter implemented and fixture-tested; no actual file supplied or loaded |
+| [UCI Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii) | CC BY 4.0; DOI 10.24432/C5CG6D | One invoice line; 1,067,371 instances across two years | Basket analysis, RFM, returns/cancellations and line-level anomalies | Physical stores, inventory, supplier shipments and complete promotions | Recommended real dataset; multi-sheet adapter implemented and fixture-tested |
+
+## Download and attribution
+
+- UCI datasets can be downloaded directly from their repository pages. CC BY 4.0 permits sharing and adaptation provided appropriate credit is given. Keep the original workbook outside Git and retain its DOI in reports or presentations.
+- Kaggle's Walmart data page provides `train.csv`, `features.csv`, `stores.csv`, `test.csv` and a sample submission after the user signs in and accepts the competition rules. Its license is governed by those rules, not CC BY 4.0.
+- Recommended local locations are `data/raw/public/online_retail_II.xlsx` and `data/raw/public/walmart/`. These paths are ignored by Git.
 
 ## Canonical generated data
 
@@ -34,7 +41,7 @@ Both adapters create a manifest containing input hashes, output hash, row counts
 
 ## Reproducibility and privacy
 
-Generated customer names and example.invalid email addresses are fictitious. Local .env files, generated data and trained models are ignored by Git. The local baseline backup may contain an original configuration and must not be published.
+Generated customer names and example.invalid email addresses are fictitious. Local .env files, downloaded/generated data and trained models are ignored by Git.
 
 ## Verified scope
 
