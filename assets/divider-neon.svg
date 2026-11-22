@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="30" viewBox="0 0 1200 30" role="img" aria-labelledby="title desc">
   <title id="title">Pulsing neon divider</title>
-  <desc id="desc">A central neon line pulses through cyan violet and magenta.</desc>
+  <desc id="desc">A central warm-glow line pulses through coral terracotta tangerine and peach.</desc>
   <defs>
     <linearGradient id="neon" x1="0" x2="1">
-      <stop offset="0" stop-color="#07111F"/>
-      <stop offset="0.2" stop-color="#22D3EE"/>
-      <stop offset="0.5" stop-color="#8B5CF6"/>
-      <stop offset="0.8" stop-color="#EC4899"/>
-      <stop offset="1" stop-color="#07111F"/>
+      <stop offset="0" stop-color="#472D30"/>
+      <stop offset="0.2" stop-color="#E26D5C"/>
+      <stop offset="0.5" stop-color="#AA5551"/>
+      <stop offset="0.8" stop-color="#F1A782"/>
+      <stop offset="1" stop-color="#472D30"/>
     </linearGradient>
     <filter id="glow" x="-10%" y="-300%" width="120%" height="700%">
       <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect width="1200" height="30" fill="#07111F"/>
+  <rect width="1200" height="30" fill="#472D30"/>
   <rect x="50" y="13" width="1100" height="4" rx="2" fill="url(#neon)" filter="url(#glow)">
     <animate attributeName="opacity" values="0.35;1;0.35" dur="2.2s" repeatCount="indefinite"/>
     <animate attributeName="height" values="2;6;2" dur="2.2s" repeatCount="indefinite"/>

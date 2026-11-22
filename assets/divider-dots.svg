@@ -7,15 +7,15 @@
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect width="1200" height="32" fill="#07111F"/>
-  <path d="M20 16H1180" stroke="#22D3EE" stroke-opacity="0.32" stroke-width="2" stroke-dasharray="2 12"/>
-  <circle r="5" fill="#22D3EE" filter="url(#glow)">
+  <rect width="1200" height="32" fill="#472D30"/>
+  <path d="M20 16H1180" stroke="#E26D5C" stroke-opacity="0.32" stroke-width="2" stroke-dasharray="2 12"/>
+  <circle r="5" fill="#E26D5C" filter="url(#glow)">
     <animateMotion dur="4s" repeatCount="indefinite" path="M20 16H1180"/>
   </circle>
-  <circle r="4" fill="#F59E0B" filter="url(#glow)">
+  <circle r="4" fill="#EA8A6F" filter="url(#glow)">
     <animateMotion dur="4s" begin="-1.3s" repeatCount="indefinite" path="M20 16H1180"/>
   </circle>
-  <circle r="5" fill="#10B981" filter="url(#glow)">
+  <circle r="5" fill="#C9CBA3" filter="url(#glow)">
     <animateMotion dur="4s" begin="-2.6s" repeatCount="indefinite" path="M20 16H1180"/>
   </circle>
 </svg>

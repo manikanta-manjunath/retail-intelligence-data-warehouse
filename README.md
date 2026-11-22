@@ -1,22 +1,22 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&amp;color=0:07111F,20:22D3EE,42:8B5CF6,64:EC4899,82:F59E0B,100:10B981&amp;height=250&amp;section=header&amp;text=RETAIL%20INTELLIGENCE&amp;fontSize=50&amp;fontColor=E6F7FF&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=DATA%20WAREHOUSE%20%E2%80%A2%20MINING%20%E2%80%A2%20FORECASTING%20%E2%80%A2%20DECISION%20SUPPORT&amp;descAlignY=59&amp;descSize=16" alt="Animated futuristic Retail Intelligence header" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&amp;color=0:472D30,14:723D46,28:AA5551,42:E26D5C,56:EA8A6F,70:F1A782,84:FFE1A8,100:C9CBA3&amp;height=250&amp;section=header&amp;text=RETAIL%20INTELLIGENCE&amp;fontSize=50&amp;fontColor=FFE1A8&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=DATA%20WAREHOUSE%20%E2%80%A2%20MINING%20%E2%80%A2%20FORECASTING%20%E2%80%A2%20DECISION%20SUPPORT&amp;descAlignY=59&amp;descSize=16" alt="Animated warm-palette Retail Intelligence header" />
 
 <img src="assets/hud-logo.svg" width="170" alt="Animated Retail Intelligence HUD logo with rotating data rings" />
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=Space+Mono&amp;weight=700&amp;size=21&amp;duration=2500&amp;pause=750&amp;color=22D3EE&amp;center=true&amp;vCenter=true&amp;multiline=false&amp;repeat=true&amp;random=false&amp;width=920&amp;height=52&amp;lines=%5B+AUTHENTICATED+DATA+PIPELINE+ONLINE+%5D;%5B+15-YEAR+WAREHOUSE+SIGNAL+LOCKED+%5D;%5B+FORECASTING+%7C+RFM+%7C+FP-GROWTH+%7C+ANOMALIES+%5D;%5B+25%2F25+TESTS+%E2%80%A2+ZERO+DUPLICATE+REPLAY+%5D;%5B+REPRODUCIBLE+RETAIL+INTELLIGENCE+%5D" width="920" alt="Animated terminal messages describing project capabilities" />
+<img src="https://readme-typing-svg.demolab.com?font=Space+Mono&amp;weight=700&amp;size=21&amp;duration=2500&amp;pause=750&amp;color=E26D5C&amp;center=true&amp;vCenter=true&amp;multiline=false&amp;repeat=true&amp;random=false&amp;width=920&amp;height=52&amp;lines=%5B+AUTHENTICATED+DATA+PIPELINE+ONLINE+%5D;%5B+15-YEAR+WAREHOUSE+SIGNAL+LOCKED+%5D;%5B+FORECASTING+%7C+RFM+%7C+FP-GROWTH+%7C+ANOMALIES+%5D;%5B+25%2F25+TESTS+%E2%80%A2+ZERO+DUPLICATE+REPLAY+%5D;%5B+REPRODUCIBLE+RETAIL+INTELLIGENCE+%5D" width="920" alt="Animated terminal messages describing project capabilities" />
 
 <p>
-  <a href="https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse/stargazers"><img src="https://img.shields.io/github/stars/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;logo=github&amp;logoColor=E6F7FF&amp;labelColor=07111F&amp;color=22D3EE" alt="GitHub stars" /></a>
-  <a href="https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse/network/members"><img src="https://img.shields.io/github/forks/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;logo=github&amp;logoColor=E6F7FF&amp;labelColor=07111F&amp;color=8B5CF6" alt="GitHub forks" /></a>
-  <a href="#-tech-stack"><img src="https://img.shields.io/github/languages/top/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;logo=python&amp;logoColor=E6F7FF&amp;labelColor=07111F&amp;color=EC4899" alt="Primary repository language" /></a>
-  <a href="#-testing--verification"><img src="https://img.shields.io/badge/TESTS-25%2F25%20PASSING-10B981?style=for-the-badge&amp;logo=pytest&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Twenty-five automated tests passing" /></a>
-  <a href="#-live-demo--visual-intelligence"><img src="https://img.shields.io/badge/DEMO-LOCAL%20HUD-F59E0B?style=for-the-badge&amp;logo=streamlit&amp;logoColor=07111F&amp;labelColor=07111F" alt="Local Streamlit dashboard demo" /></a>
-  <a href="docs/STUDENT_LEARNING_REPORT.md"><img src="https://img.shields.io/badge/REPORT-30%20PAGES-8B5CF6?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Professional thirty-page student learning report" /></a>
-  <a href="docs/STUDENT_LEARNING_PRESENTATION.md"><img src="https://img.shields.io/badge/PRESENTATION-6%20SLIDES-EC4899?style=for-the-badge&amp;logo=slides&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Six-slide Markdown presentation" /></a>
-  <a href="LICENSES_AND_DATA_SOURCES.md"><img src="https://img.shields.io/badge/LICENSE-EDUCATIONAL%20%2F%20SOURCE--SPECIFIC-22D3EE?style=for-the-badge&amp;labelColor=07111F" alt="Educational and source-specific licensing" /></a>
+  <a href="https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse/stargazers"><img src="https://img.shields.io/github/stars/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;logo=github&amp;logoColor=FFE1A8&amp;labelColor=472D30&amp;color=E26D5C" alt="GitHub stars" /></a>
+  <a href="https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse/network/members"><img src="https://img.shields.io/github/forks/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;logo=github&amp;logoColor=FFE1A8&amp;labelColor=472D30&amp;color=AA5551" alt="GitHub forks" /></a>
+  <a href="#-tech-stack"><img src="https://img.shields.io/github/languages/top/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;logo=python&amp;logoColor=472D30&amp;labelColor=472D30&amp;color=F1A782" alt="Primary repository language" /></a>
+  <a href="#-testing--verification"><img src="https://img.shields.io/badge/TESTS-25%2F25%20PASSING-C9CBA3?style=for-the-badge&amp;logo=pytest&amp;logoColor=472D30&amp;labelColor=472D30" alt="Twenty-five automated tests passing" /></a>
+  <a href="#-live-demo--visual-intelligence"><img src="https://img.shields.io/badge/DEMO-LOCAL%20HUD-EA8A6F?style=for-the-badge&amp;logo=streamlit&amp;logoColor=472D30&amp;labelColor=472D30" alt="Local Streamlit dashboard demo" /></a>
+  <a href="docs/STUDENT_LEARNING_REPORT.md"><img src="https://img.shields.io/badge/REPORT-30%20PAGES-AA5551?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=FFE1A8&amp;labelColor=472D30" alt="Professional thirty-page student learning report" /></a>
+  <a href="docs/STUDENT_LEARNING_PRESENTATION.md"><img src="https://img.shields.io/badge/PRESENTATION-6%20SLIDES-F1A782?style=for-the-badge&amp;logo=slides&amp;logoColor=472D30&amp;labelColor=472D30" alt="Six-slide Markdown presentation" /></a>
+  <a href="LICENSES_AND_DATA_SOURCES.md"><img src="https://img.shields.io/badge/LICENSE-EDUCATIONAL%20%2F%20SOURCE--SPECIFIC-E26D5C?style=for-the-badge&amp;labelColor=472D30" alt="Educational and source-specific licensing" /></a>
 </p>
 
 <p>
@@ -39,7 +39,7 @@
 
 </div>
 
-<img src="assets/divider-spectrum.svg" width="100%" alt="Animated six-color spectrum divider" />
+<img src="assets/divider-spectrum.svg" width="100%" alt="Animated eight-color spectrum divider" />
 
 ## Quick Navigation
 
@@ -87,16 +87,18 @@
 > The canonical warehouse contains deterministic synthetic educational data, not Walmart internal data. Forecast, association, clustering and anomaly metrics demonstrate the workflow and do not establish production performance.
 
 <details>
-<summary><strong>Open the six-color visual system</strong></summary>
+<summary><strong>Open the eight-color visual system</strong></summary>
 
 | Role | Name | Hex | Meaning |
 | --- | --- | --- | --- |
-| Dark base | Warehouse Void | `#07111F` | Persistent historical storage and deep-space HUD surface |
-| Primary | Signal Cyan | `#22D3EE` | Data movement, lineage and active telemetry |
-| Secondary | Predictive Violet | `#8B5CF6` | Forecasting, models and analytical depth |
-| Accent 1 | Demand Magenta | `#EC4899` | Customer behavior, baskets and mining signals |
-| Accent 2 | Inventory Amber | `#F59E0B` | Stock, supplier and operational attention |
-| Success | Verified Emerald | `#10B981` | Reconciliation, tests and trusted state |
+| Dark base | Deep Mocha | `#472D30` | Warehouse depth, persistent history and the main HUD surface |
+| Dark surface | Wine Plum | `#723D46` | Panels, diagram nodes and layered analytical depth |
+| Primary | Vibrant Coral | `#E26D5C` | Active data signals, navigation and primary actions |
+| Secondary | Terracotta Clay | `#AA5551` | Warehouse structure, models and grounded technical elements |
+| Accent 1 | Tangerine Dream | `#F1A782` | Customer behavior, baskets and high-energy highlights |
+| Accent 2 | Salmon | `#EA8A6F` | Inventory, suppliers and operational attention |
+| Light highlight | Soft Peach | `#FFE1A8` | Text, illuminated details and high-contrast labels |
+| Success | Dry Sage | `#C9CBA3` | Reconciliation, tests and trusted verified state |
 
 </details>
 
@@ -110,14 +112,14 @@
       <h3>📘 Professional 30-Page Report</h3>
       <p>A detailed A4-ready self-learning and teamwork report containing <strong>14,000+ words</strong>, explicit page breaks, verified preprocessing examples, ten Mermaid diagrams, warehouse design, ETL, analytics, testing, teamwork, limitations, reflection and reproduction guidance.</p>
       <a href="docs/STUDENT_LEARNING_REPORT.md">
-        <img src="https://img.shields.io/badge/OPEN%20THE%20REPORT-30%20PAGES-8B5CF6?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Open the professional thirty-page student learning report" />
+        <img src="https://img.shields.io/badge/OPEN%20THE%20REPORT-30%20PAGES-AA5551?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=FFE1A8&amp;labelColor=472D30" alt="Open the professional thirty-page student learning report" />
       </a>
     </td>
     <td width="50%" align="center" valign="top">
       <h3>🎞️ Six-Slide Presentation</h3>
       <p>A Marp-compatible Markdown presentation covering the retail problem, system architecture, 48-hour learning process, verified analytical results, dashboard decision support and future roadmap.</p>
       <a href="docs/STUDENT_LEARNING_PRESENTATION.md">
-        <img src="https://img.shields.io/badge/OPEN%20PRESENTATION-6%20SLIDES-EC4899?style=for-the-badge&amp;logo=slides&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Open the six-slide Markdown presentation" />
+        <img src="https://img.shields.io/badge/OPEN%20PRESENTATION-6%20SLIDES-F1A782?style=for-the-badge&amp;logo=slides&amp;logoColor=472D30&amp;labelColor=472D30" alt="Open the six-slide Markdown presentation" />
       </a>
     </td>
   </tr>
@@ -224,32 +226,32 @@
 ### Data and engineering
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PYTHON-3.11%2B-22D3EE?style=for-the-badge&amp;logo=python&amp;logoColor=07111F&amp;labelColor=07111F" alt="Python 3.11 or newer" />
-  <img src="https://img.shields.io/badge/SQL%20SERVER-2022-8B5CF6?style=for-the-badge&amp;logo=microsoftsqlserver&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Microsoft SQL Server 2022" />
-  <img src="https://img.shields.io/badge/DOCKER-COMPOSE-22D3EE?style=for-the-badge&amp;logo=docker&amp;logoColor=07111F&amp;labelColor=07111F" alt="Docker Compose" />
-  <img src="https://img.shields.io/badge/T--SQL-WAREHOUSE-8B5CF6?style=for-the-badge&amp;labelColor=07111F" alt="T-SQL data warehouse" />
+  <img src="https://img.shields.io/badge/PYTHON-3.11%2B-E26D5C?style=for-the-badge&amp;logo=python&amp;logoColor=472D30&amp;labelColor=472D30" alt="Python 3.11 or newer" />
+  <img src="https://img.shields.io/badge/SQL%20SERVER-2022-AA5551?style=for-the-badge&amp;logo=microsoftsqlserver&amp;logoColor=FFE1A8&amp;labelColor=472D30" alt="Microsoft SQL Server 2022" />
+  <img src="https://img.shields.io/badge/DOCKER-COMPOSE-E26D5C?style=for-the-badge&amp;logo=docker&amp;logoColor=472D30&amp;labelColor=472D30" alt="Docker Compose" />
+  <img src="https://img.shields.io/badge/T--SQL-WAREHOUSE-AA5551?style=for-the-badge&amp;labelColor=472D30" alt="T-SQL data warehouse" />
 </p>
 
 ### Analytics and experience
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PANDAS-DATA%20FRAMES-EC4899?style=for-the-badge&amp;logo=pandas&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="pandas data processing" />
-  <img src="https://img.shields.io/badge/SCIKIT--LEARN-MODELS-F59E0B?style=for-the-badge&amp;logo=scikitlearn&amp;logoColor=07111F&amp;labelColor=07111F" alt="scikit-learn models" />
-  <img src="https://img.shields.io/badge/STATSMODELS-FORECASTING-8B5CF6?style=for-the-badge&amp;labelColor=07111F" alt="statsmodels forecasting" />
-  <img src="https://img.shields.io/badge/STREAMLIT-HUD-EC4899?style=for-the-badge&amp;logo=streamlit&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Streamlit dashboard" />
-  <img src="https://img.shields.io/badge/PLOTLY-VISUALS-22D3EE?style=for-the-badge&amp;logo=plotly&amp;logoColor=07111F&amp;labelColor=07111F" alt="Plotly visualisations" />
+  <img src="https://img.shields.io/badge/PANDAS-DATA%20FRAMES-F1A782?style=for-the-badge&amp;logo=pandas&amp;logoColor=FFE1A8&amp;labelColor=472D30" alt="pandas data processing" />
+  <img src="https://img.shields.io/badge/SCIKIT--LEARN-MODELS-EA8A6F?style=for-the-badge&amp;logo=scikitlearn&amp;logoColor=472D30&amp;labelColor=472D30" alt="scikit-learn models" />
+  <img src="https://img.shields.io/badge/STATSMODELS-FORECASTING-AA5551?style=for-the-badge&amp;labelColor=472D30" alt="statsmodels forecasting" />
+  <img src="https://img.shields.io/badge/STREAMLIT-HUD-F1A782?style=for-the-badge&amp;logo=streamlit&amp;logoColor=FFE1A8&amp;labelColor=472D30" alt="Streamlit dashboard" />
+  <img src="https://img.shields.io/badge/PLOTLY-VISUALS-E26D5C?style=for-the-badge&amp;logo=plotly&amp;logoColor=472D30&amp;labelColor=472D30" alt="Plotly visualisations" />
 </p>
 
 ### Quality and documentation
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PYTEST-25%20PASSING-10B981?style=for-the-badge&amp;logo=pytest&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="pytest quality suite" />
-  <img src="https://img.shields.io/badge/MERMAID-ARCHITECTURE-8B5CF6?style=for-the-badge&amp;logo=mermaid&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Mermaid architecture diagrams" />
-  <img src="https://img.shields.io/badge/MARKDOWN-DOCUMENTATION-22D3EE?style=for-the-badge&amp;logo=markdown&amp;logoColor=07111F&amp;labelColor=07111F" alt="Markdown documentation" />
-  <img src="https://img.shields.io/badge/MARP-6%20SLIDES-EC4899?style=for-the-badge&amp;labelColor=07111F" alt="Marp six-slide presentation" />
+  <img src="https://img.shields.io/badge/PYTEST-25%20PASSING-C9CBA3?style=for-the-badge&amp;logo=pytest&amp;logoColor=FFE1A8&amp;labelColor=472D30" alt="pytest quality suite" />
+  <img src="https://img.shields.io/badge/MERMAID-ARCHITECTURE-AA5551?style=for-the-badge&amp;logo=mermaid&amp;logoColor=FFE1A8&amp;labelColor=472D30" alt="Mermaid architecture diagrams" />
+  <img src="https://img.shields.io/badge/MARKDOWN-DOCUMENTATION-E26D5C?style=for-the-badge&amp;logo=markdown&amp;logoColor=472D30&amp;labelColor=472D30" alt="Markdown documentation" />
+  <img src="https://img.shields.io/badge/MARP-6%20SLIDES-F1A782?style=for-the-badge&amp;labelColor=472D30" alt="Marp six-slide presentation" />
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=slice&amp;color=0:07111F,20:22D3EE,48:8B5CF6,72:EC4899,100:07111F&amp;height=105&amp;section=header&amp;reversal=true&amp;animation=fadeIn" alt="Animated slice transition into architecture" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=slice&amp;color=0:472D30,20:E26D5C,48:AA5551,72:F1A782,100:472D30&amp;height=105&amp;section=header&amp;reversal=true&amp;animation=fadeIn" alt="Animated slice transition into architecture" />
 
 ## 🛰️ Architecture
 
@@ -258,7 +260,7 @@
 </div>
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables': {'background':'#07111F','primaryColor':'#0B1F35','primaryTextColor':'#E6F7FF','primaryBorderColor':'#22D3EE','lineColor':'#8B5CF6','secondaryColor':'#EC4899','tertiaryColor':'#10B981','fontFamily':'monospace'}}}%%
+%%{init: {'theme':'base','themeVariables': {'background':'#472D30','primaryColor':'#723D46','primaryTextColor':'#FFE1A8','primaryBorderColor':'#E26D5C','lineColor':'#AA5551','secondaryColor':'#F1A782','tertiaryColor':'#C9CBA3','fontFamily':'monospace'}}}%%
 flowchart TB
     subgraph SRC["SOURCE GRID"]
         GEN["Synthetic Generator"]
@@ -317,16 +319,16 @@ flowchart TB
     QA -.-> DW
     QA -.-> AI
 
-    classDef cyan fill:#0B1F35,stroke:#22D3EE,color:#E6F7FF,stroke-width:2px;
-    classDef violet fill:#15112C,stroke:#8B5CF6,color:#E6F7FF,stroke-width:2px;
-    classDef magenta fill:#261127,stroke:#EC4899,color:#E6F7FF,stroke-width:2px;
-    classDef amber fill:#2B1C08,stroke:#F59E0B,color:#E6F7FF,stroke-width:2px;
-    classDef green fill:#08251C,stroke:#10B981,color:#E6F7FF,stroke-width:2px;
-    class GEN,PUB,MAN cyan;
-    class VAL,REJ,ARC,STG,ETL,AUD violet;
-    class DIM,FACT,MART magenta;
-    class FC,MB,RFM,AN,OPS amber;
-    class DASH,QA green;
+    classDef coral fill:#723D46,stroke:#E26D5C,color:#FFE1A8,stroke-width:2px;
+    classDef clay fill:#723D46,stroke:#AA5551,color:#FFE1A8,stroke-width:2px;
+    classDef tangerine fill:#723D46,stroke:#F1A782,color:#FFE1A8,stroke-width:2px;
+    classDef salmon fill:#AA5551,stroke:#EA8A6F,color:#FFE1A8,stroke-width:2px;
+    classDef sage fill:#723D46,stroke:#C9CBA3,color:#FFE1A8,stroke-width:2px;
+    class GEN,PUB,MAN coral;
+    class VAL,REJ,ARC,STG,ETL,AUD clay;
+    class DIM,FACT,MART tangerine;
+    class FC,MB,RFM,AN,OPS salmon;
+    class DASH,QA sage;
 ```
 
 <details>
@@ -355,7 +357,7 @@ Read [Architecture](docs/ARCHITECTURE.md), [Warehouse Model](wiki/data-model.md)
 ## ⏱️ Workflow Timeline
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables': {'background':'#07111F','primaryColor':'#0B1F35','primaryTextColor':'#E6F7FF','primaryBorderColor':'#22D3EE','lineColor':'#8B5CF6','fontFamily':'monospace'}}}%%
+%%{init: {'theme':'base','themeVariables': {'background':'#472D30','primaryColor':'#723D46','primaryTextColor':'#FFE1A8','primaryBorderColor':'#E26D5C','lineColor':'#AA5551','fontFamily':'monospace'}}}%%
 flowchart LR
     A["01 AUTHENTICATE<br/>manifest hashes counts"] --> B["02 VALIDATE<br/>types ranges references"]
     B --> C["03 ARCHIVE<br/>original JSON rows"]
@@ -366,11 +368,11 @@ flowchart LR
     G --> H["08 PRESENT<br/>filter-aware dashboard"]
     H --> I["09 VERIFY<br/>tests evidence limits"]
 
-    classDef c1 fill:#0B1F35,stroke:#22D3EE,color:#E6F7FF;
-    classDef c2 fill:#15112C,stroke:#8B5CF6,color:#E6F7FF;
-    classDef c3 fill:#261127,stroke:#EC4899,color:#E6F7FF;
-    classDef c4 fill:#2B1C08,stroke:#F59E0B,color:#E6F7FF;
-    classDef c5 fill:#08251C,stroke:#10B981,color:#E6F7FF;
+    classDef c1 fill:#723D46,stroke:#E26D5C,color:#FFE1A8;
+    classDef c2 fill:#723D46,stroke:#AA5551,color:#FFE1A8;
+    classDef c3 fill:#723D46,stroke:#F1A782,color:#FFE1A8;
+    classDef c4 fill:#AA5551,stroke:#EA8A6F,color:#FFE1A8;
+    classDef c5 fill:#723D46,stroke:#C9CBA3,color:#FFE1A8;
     class A,B c1;
     class C,D c2;
     class E,F c3;
@@ -483,7 +485,7 @@ Historical business keys use safe prefixes so the extension does not overwrite l
 
 </details>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=shark&amp;color=0:07111F,30:8B5CF6,55:EC4899,78:F59E0B,100:07111F&amp;height=95&amp;section=header&amp;animation=fadeIn" alt="Animated shark transition into usage" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=shark&amp;color=0:472D30,30:AA5551,55:F1A782,78:EA8A6F,100:472D30&amp;height=95&amp;section=header&amp;animation=fadeIn" alt="Animated shark transition into usage" />
 
 ## 🎛️ Usage
 
@@ -598,15 +600,15 @@ retail-intelligence-data-warehouse/
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=manikanta-manjunath&amp;repo=retail-intelligence-data-warehouse&amp;theme=transparent&amp;title_color=22D3EE&amp;text_color=E6F7FF&amp;icon_color=F59E0B&amp;border_color=8B5CF6&amp;bg_color=07111F" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=manikanta-manjunath&amp;repo=retail-intelligence-data-warehouse&amp;theme=transparent&amp;title_color=6D28D9&amp;text_color=07111F&amp;icon_color=D97706&amp;border_color=0891B2&amp;bg_color=F8FAFC" />
-  <img width="520" src="https://github-readme-stats.vercel.app/api/pin/?username=manikanta-manjunath&amp;repo=retail-intelligence-data-warehouse&amp;theme=transparent&amp;title_color=22D3EE&amp;text_color=E6F7FF&amp;icon_color=F59E0B&amp;border_color=8B5CF6&amp;bg_color=07111F" alt="Responsive GitHub repository statistics card" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=manikanta-manjunath&amp;repo=retail-intelligence-data-warehouse&amp;theme=transparent&amp;title_color=E26D5C&amp;text_color=FFE1A8&amp;icon_color=EA8A6F&amp;border_color=AA5551&amp;bg_color=472D30" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=manikanta-manjunath&amp;repo=retail-intelligence-data-warehouse&amp;theme=transparent&amp;title_color=AA5551&amp;text_color=472D30&amp;icon_color=EA8A6F&amp;border_color=C9CBA3&amp;bg_color=FFE1A8" />
+  <img width="520" src="https://github-readme-stats.vercel.app/api/pin/?username=manikanta-manjunath&amp;repo=retail-intelligence-data-warehouse&amp;theme=transparent&amp;title_color=E26D5C&amp;text_color=FFE1A8&amp;icon_color=EA8A6F&amp;border_color=AA5551&amp;bg_color=472D30" alt="Responsive GitHub repository statistics card" />
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=manikanta-manjunath&amp;bg_color=07111F&amp;color=22D3EE&amp;line=8B5CF6&amp;point=F59E0B&amp;area_color=EC4899&amp;area=true&amp;hide_border=true" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=manikanta-manjunath&amp;bg_color=F8FAFC&amp;color=0E7490&amp;line=6D28D9&amp;point=D97706&amp;area_color=DB2777&amp;area=true&amp;hide_border=true" />
-  <img width="920" src="https://github-readme-activity-graph.vercel.app/graph?username=manikanta-manjunath&amp;bg_color=07111F&amp;color=22D3EE&amp;line=8B5CF6&amp;point=F59E0B&amp;area_color=EC4899&amp;area=true&amp;hide_border=true" alt="Responsive animated GitHub activity graph" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=manikanta-manjunath&amp;bg_color=472D30&amp;color=E26D5C&amp;line=AA5551&amp;point=EA8A6F&amp;area_color=F1A782&amp;area=true&amp;hide_border=true" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=manikanta-manjunath&amp;bg_color=FFE1A8&amp;color=AA5551&amp;line=AA5551&amp;point=EA8A6F&amp;area_color=E26D5C&amp;area=true&amp;hide_border=true" />
+  <img width="920" src="https://github-readme-activity-graph.vercel.app/graph?username=manikanta-manjunath&amp;bg_color=472D30&amp;color=E26D5C&amp;line=AA5551&amp;point=EA8A6F&amp;area_color=F1A782&amp;area=true&amp;hide_border=true" alt="Responsive animated GitHub activity graph" />
 </picture>
 
 </div>
@@ -699,7 +701,7 @@ Contributions that improve correctness, reproducibility, accessibility or source
 
 </details>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:07111F,20:10B981,45:22D3EE,70:8B5CF6,100:07111F&amp;height=70&amp;section=header&amp;animation=fadeIn" alt="Animated rectangular transition into licensing" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:472D30,20:C9CBA3,45:E26D5C,70:AA5551,100:472D30&amp;height=70&amp;section=header&amp;animation=fadeIn" alt="Animated rectangular transition into licensing" />
 
 ## 📄 License
 
@@ -721,13 +723,13 @@ Review [LICENSES_AND_DATA_SOURCES.md](LICENSES_AND_DATA_SOURCES.md) before redis
 <h3>If this repository helped you learn, illuminate the signal with a ⭐</h3>
 
 <a href="https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse">
-  <img src="https://img.shields.io/badge/STAR%20THIS%20REPOSITORY-22D3EE?style=for-the-badge&amp;logo=github&amp;logoColor=07111F&amp;labelColor=07111F" alt="Star this repository on GitHub" />
+  <img src="https://img.shields.io/badge/STAR%20THIS%20REPOSITORY-E26D5C?style=for-the-badge&amp;logo=github&amp;logoColor=472D30&amp;labelColor=472D30" alt="Star this repository on GitHub" />
 </a>
 
 <br /><br />
 
 <sub><code>BUILD.TRANSPARENT</code> · <code>DATA.REPRODUCIBLE</code> · <code>CLAIMS.VERIFIED</code></sub>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:10B981,20:F59E0B,42:EC4899,64:8B5CF6,82:22D3EE,100:07111F&amp;height=170&amp;section=footer&amp;animation=fadeIn" alt="Animated six-color footer wave" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:C9CBA3,14:FFE1A8,28:F1A782,42:EA8A6F,56:E26D5C,70:AA5551,84:723D46,100:472D30&amp;height=170&amp;section=footer&amp;animation=fadeIn" alt="Animated eight-color footer wave" />
 
 </div>

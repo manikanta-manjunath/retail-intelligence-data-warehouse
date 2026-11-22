@@ -2,21 +2,21 @@
   <title id="title">Animated project progress bars</title>
   <desc id="desc">Five neon progress bars show warehouse analytics dashboard testing and documentation completion.</desc>
   <defs>
-    <linearGradient id="g1"><stop stop-color="#22D3EE"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
-    <linearGradient id="g2"><stop stop-color="#8B5CF6"/><stop offset="1" stop-color="#EC4899"/></linearGradient>
-    <linearGradient id="g3"><stop stop-color="#EC4899"/><stop offset="1" stop-color="#F59E0B"/></linearGradient>
-    <linearGradient id="g4"><stop stop-color="#F59E0B"/><stop offset="1" stop-color="#10B981"/></linearGradient>
-    <linearGradient id="g5"><stop stop-color="#10B981"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+    <linearGradient id="g1"><stop stop-color="#E26D5C"/><stop offset="1" stop-color="#AA5551"/></linearGradient>
+    <linearGradient id="g2"><stop stop-color="#AA5551"/><stop offset="1" stop-color="#F1A782"/></linearGradient>
+    <linearGradient id="g3"><stop stop-color="#F1A782"/><stop offset="1" stop-color="#EA8A6F"/></linearGradient>
+    <linearGradient id="g4"><stop stop-color="#EA8A6F"/><stop offset="1" stop-color="#C9CBA3"/></linearGradient>
+    <linearGradient id="g5"><stop stop-color="#C9CBA3"/><stop offset="1" stop-color="#E26D5C"/></linearGradient>
   </defs>
-  <rect width="900" height="230" rx="18" fill="#07111F"/>
-  <g font-family="monospace" font-size="14" fill="#E6F7FF">
+  <rect width="900" height="230" rx="18" fill="#472D30"/>
+  <g font-family="monospace" font-size="14" fill="#FFE1A8">
     <text x="35" y="42">WAREHOUSE</text><text x="790" y="42">100%</text>
     <text x="35" y="82">ANALYTICS</text><text x="790" y="82">100%</text>
     <text x="35" y="122">DASHBOARD</text><text x="790" y="122">100%</text>
     <text x="35" y="162">TESTING</text><text x="790" y="162">100%</text>
     <text x="35" y="202">PRODUCTION ROADMAP</text><text x="790" y="202">45%</text>
   </g>
-  <g fill="#0B1F35" stroke="#22D3EE" stroke-opacity="0.25">
+  <g fill="#723D46" stroke="#E26D5C" stroke-opacity="0.25">
     <rect x="185" y="27" width="580" height="16" rx="8"/><rect x="185" y="67" width="580" height="16" rx="8"/>
     <rect x="185" y="107" width="580" height="16" rx="8"/><rect x="185" y="147" width="580" height="16" rx="8"/>
     <rect x="185" y="187" width="580" height="16" rx="8"/>
