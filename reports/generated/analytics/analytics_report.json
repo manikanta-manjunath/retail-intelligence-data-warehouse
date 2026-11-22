@@ -1,0 +1,132 @@
+{
+  "status": "SUCCESS",
+  "warehouse_signature": {
+    "SuccessfulRun": "17.0",
+    "SalesLines": "182176.0",
+    "NetSales": "16976377.14",
+    "LastSalesKey": "182176.0",
+    "InventoryRows": "18000.0",
+    "Shipments": "4800.0",
+    "ProductVersions": "150.0"
+  },
+  "forecast": {
+    "selected_model": "exponential_smoothing",
+    "selection_metric": "Lowest mean rolling-origin WAPE (MAE tie-break; final test unseen)",
+    "backtest_folds": 5,
+    "development_weeks": 770,
+    "test_weeks": 12,
+    "development_end": "2024-09-30",
+    "test_start": "2024-10-07",
+    "test_end": "2024-12-23",
+    "selected_model_backtest": {
+      "MAE_mean": 2334.535756257201,
+      "MAE_std": 657.5537365790863,
+      "RMSE_mean": 2722.5812257477082,
+      "RMSE_std": 689.6861383705979,
+      "WAPE_percent_mean": 12.960443060702914,
+      "WAPE_percent_std": 3.630131647908155,
+      "MASE_mean": 0.5418337306906903,
+      "MASE_std": 0.15020282456412967
+    },
+    "limitations": [
+      "Rolling-origin results estimate stability across historical synthetic periods; no causal or operational performance claim.",
+      "Synthetic growth-weighted dates and embedded promotions limit real-world forecasting value.",
+      "Recursive fixed-origin predictions use no observed fold/test target values.",
+      "Fiscal year and calendar year are treated as identical in this demonstration."
+    ],
+    "selected_model_test_metrics": {
+      "MAE": 2633.6007567494757,
+      "RMSE": 3333.633580171483,
+      "WAPE_percent": 15.256208069779111,
+      "MASE": 0.6227110710499123
+    }
+  },
+  "association_rules": {
+    "basket_count": 73213,
+    "frequent_itemsets": 156,
+    "rule_count": 5,
+    "min_support": 0.002,
+    "limitations": [
+      "Associations were embedded by the synthetic generator; these are demonstration results.",
+      "Transaction IDs are valid baskets; anonymous transactions remain included."
+    ]
+  },
+  "segmentation": {
+    "silhouette_score": 0.2729362840433074,
+    "customers_clustered": 500,
+    "clusters": 4,
+    "limitations": [
+      "Synthetic customer IDs only; anonymous sales excluded.",
+      "Unsupervised descriptive clusters; no classification accuracy or customer targeting claim."
+    ]
+  },
+  "anomaly_detection": {
+    "train_lines": 144471,
+    "excluded_labeled_training_lines": 1464,
+    "evaluated_lines": 36241,
+    "training_cutoff": "2021-12-31",
+    "flagged_lines": 713,
+    "synthetic_positive_lines": 143,
+    "true_positives": 89,
+    "false_positives": 624,
+    "false_negatives": 54,
+    "true_negatives": 35474,
+    "precision": 0.12482468443197756,
+    "recall": 0.6223776223776224,
+    "f1": 0.20794392523364486,
+    "limitations": [
+      "Precision, recall and F1 apply only to deterministic injected high-quantity anomalies, not real-world fraud or every business anomaly.",
+      "Unlabeled unusual records are counted as negatives, so measured precision can understate useful review flags.",
+      "Large legitimate orders can be flagged; human review is required."
+    ]
+  },
+  "problems": {
+    "detected_rows": 6239,
+    "problem_types": {
+      "EXCESSIVE_DISCOUNT": 2844,
+      "UNDERSTOCK": 1390,
+      "STOCKOUT": 883,
+      "SUPPLIER_DELAY": 705,
+      "PARTIAL_FILL": 361,
+      "SALES_SPIKE": 55,
+      "YEAR_OVER_YEAR_DECLINE": 1
+    }
+  },
+  "inventory": {
+    "latest_snapshot_rows": 150,
+    "stockout_rows": 12,
+    "reorder_rows": 49,
+    "limitations": [
+      "Only 30 generated SKUs and five stores have daily inventory snapshots.",
+      "ABC/XYZ classifications describe generated demand and are not replenishment policy recommendations."
+    ]
+  },
+  "promotion": {
+    "promotions_evaluated": 48,
+    "limitations": [
+      "Before/during comparison is descriptive and does not establish causal promotion lift.",
+      "Promotions are generated and applied broadly in the canonical demonstration."
+    ]
+  },
+  "supplier": {
+    "suppliers_evaluated": 20,
+    "limitations": [
+      "Shipment records are generated educational telemetry."
+    ]
+  },
+  "outputs": [
+    "association_rules.csv",
+    "customer_segment_profiles.csv",
+    "customer_segments.csv",
+    "detected_problems.csv",
+    "forecast_backtest_folds.csv",
+    "forecast_backtest_metrics.csv",
+    "forecast_future.csv",
+    "forecast_test_metrics.csv",
+    "forecast_test_predictions.csv",
+    "inventory_abc_xyz.csv",
+    "promotion_analysis.csv",
+    "sales_anomalies.csv",
+    "supplier_scorecard.csv"
+  ]
+}

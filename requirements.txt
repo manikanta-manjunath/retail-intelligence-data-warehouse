@@ -1,0 +1,28 @@
+# Core Data Engineering & Database Connectivity
+pandas>=2.0.0
+numpy>=1.24.0
+SQLAlchemy>=2.0.0
+pymssql>=2.2.8
+pyodbc>=5.0.0
+pyyaml>=6.0.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+openpyxl>=3.1.0
+
+# Data Mining & Machine Learning
+scikit-learn>=1.3.0
+mlxtend>=0.23.0
+statsmodels>=0.14.0
+joblib>=1.3.0
+
+# Visualization & BI Dashboard
+streamlit>=1.30.0
+plotly>=5.18.0
+
+# API Layer (Optional)
+fastapi>=0.109.0
+uvicorn>=0.27.0
+
+# Testing & Quality Assurance
+pytest>=7.4.0
+pytest-cov>=4.1.0
