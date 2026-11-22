@@ -9,7 +9,7 @@
 | `divider-neon.svg` | Pulsing neon line |
 | `divider-dots.svg` | Moving telemetry packets |
 | `divider-pulse.svg` | Expanding and contracting gradient bar |
-| `divider-spectrum.svg` | Animated six-color spectrum |
+| `divider-spectrum.svg` | Animated eight-color warm spectrum |
 | `pulse-core.svg` | Concentric verification pulse |
 | `scanner.svg` | Horizontal validation scan |
 | `radar-ring.svg` | Rotating radar sweep and signal points |

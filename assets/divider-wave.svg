@@ -1,19 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="42" viewBox="0 0 1200 42" role="img" aria-labelledby="title desc">
   <title id="title">Animated gradient wave divider</title>
-  <desc id="desc">A cyan violet magenta and emerald data wave travels across the divider.</desc>
+  <desc id="desc">A warm coral terracotta tangerine salmon peach and sage data wave travels across the divider.</desc>
   <defs>
     <linearGradient id="wave" x1="0" x2="1">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="0.32" stop-color="#8B5CF6"/>
-      <stop offset="0.64" stop-color="#EC4899"/>
-      <stop offset="1" stop-color="#10B981"/>
+      <stop offset="0" stop-color="#723D46"/>
+      <stop offset="0.2" stop-color="#AA5551"/>
+      <stop offset="0.4" stop-color="#E26D5C"/>
+      <stop offset="0.6" stop-color="#EA8A6F"/>
+      <stop offset="0.8" stop-color="#F1A782"/>
+      <stop offset="1" stop-color="#C9CBA3"/>
     </linearGradient>
     <filter id="glow" x="-20%" y="-200%" width="140%" height="500%">
       <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect width="1200" height="42" fill="#07111F"/>
+  <rect width="1200" height="42" fill="#472D30"/>
   <path d="M0 21 C100 3 200 39 300 21 S500 3 600 21 S800 39 900 21 S1100 3 1200 21" fill="none" stroke="url(#wave)" stroke-width="3" stroke-dasharray="18 10" filter="url(#glow)">
     <animate attributeName="stroke-dashoffset" from="0" to="-112" dur="3s" repeatCount="indefinite"/>
   </path>

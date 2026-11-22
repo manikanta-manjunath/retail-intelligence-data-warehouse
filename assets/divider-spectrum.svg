@@ -1,14 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="36" viewBox="0 0 1200 36" role="img" aria-labelledby="title desc">
   <title id="title">Animated spectrum divider</title>
-  <desc id="desc">A six-color retail intelligence spectrum slides across a dark base.</desc>
+  <desc id="desc">An eight-color warm retail intelligence spectrum slides across a deep mocha base.</desc>
   <defs>
     <linearGradient id="spectrum" x1="0" x2="1">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="0.2" stop-color="#8B5CF6"/>
-      <stop offset="0.4" stop-color="#EC4899"/>
-      <stop offset="0.6" stop-color="#F59E0B"/>
-      <stop offset="0.8" stop-color="#10B981"/>
-      <stop offset="1" stop-color="#22D3EE"/>
+      <stop offset="0" stop-color="#472D30"/>
+      <stop offset="0.14" stop-color="#723D46"/>
+      <stop offset="0.28" stop-color="#AA5551"/>
+      <stop offset="0.42" stop-color="#E26D5C"/>
+      <stop offset="0.56" stop-color="#EA8A6F"/>
+      <stop offset="0.7" stop-color="#F1A782"/>
+      <stop offset="0.84" stop-color="#FFE1A8"/>
+      <stop offset="1" stop-color="#C9CBA3"/>
       <animate attributeName="x1" values="0;1;0" dur="5s" repeatCount="indefinite"/>
       <animate attributeName="x2" values="1;2;1" dur="5s" repeatCount="indefinite"/>
     </linearGradient>
@@ -17,9 +19,9 @@
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect width="1200" height="36" fill="#07111F"/>
+  <rect width="1200" height="36" fill="#472D30"/>
   <path d="M20 18H1180" stroke="url(#spectrum)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
-  <path d="M80 10V26M240 10V26M400 10V26M560 10V26M720 10V26M880 10V26M1040 10V26" stroke="#E6F7FF" stroke-opacity="0.6" stroke-width="1">
+  <path d="M80 10V26M240 10V26M400 10V26M560 10V26M720 10V26M880 10V26M1040 10V26" stroke="#FFE1A8" stroke-opacity="0.6" stroke-width="1">
     <animate attributeName="stroke-opacity" values="0.15;0.8;0.15" dur="2s" repeatCount="indefinite"/>
   </path>
 </svg>

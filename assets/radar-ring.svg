@@ -3,17 +3,17 @@
   <desc id="desc">A circular radar scans forecasting mining inventory and audit signals.</desc>
   <defs>
     <radialGradient id="sweep" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.15"/>
-      <stop offset="0.72" stop-color="#22D3EE" stop-opacity="0.05"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="0" stop-color="#E26D5C" stop-opacity="0.15"/>
+      <stop offset="0.72" stop-color="#E26D5C" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#E26D5C" stop-opacity="0"/>
     </radialGradient>
     <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
       <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect width="360" height="360" rx="28" fill="#07111F"/>
-  <g transform="translate(180 180)" fill="none" stroke="#22D3EE">
+  <rect width="360" height="360" rx="28" fill="#472D30"/>
+  <g transform="translate(180 180)" fill="none" stroke="#E26D5C">
     <circle r="130" stroke-opacity="0.3"/>
     <circle r="96" stroke-opacity="0.25"/>
     <circle r="62" stroke-opacity="0.2"/>
@@ -22,13 +22,13 @@
     <path d="M-99-99L99 99M99-99L-99 99" stroke-opacity="0.12"/>
   </g>
   <g transform-origin="180px 180px">
-    <path d="M180 180L180 38A142 142 0 0 1 302 109Z" fill="url(#sweep)" stroke="#22D3EE" stroke-width="2" filter="url(#glow)"/>
+    <path d="M180 180L180 38A142 142 0 0 1 302 109Z" fill="url(#sweep)" stroke="#E26D5C" stroke-width="2" filter="url(#glow)"/>
     <animateTransform attributeName="transform" type="rotate" from="0 180 180" to="360 180 180" dur="5s" repeatCount="indefinite"/>
   </g>
   <g filter="url(#glow)">
-    <circle cx="112" cy="128" r="6" fill="#EC4899"><animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/></circle>
-    <circle cx="242" cy="110" r="5" fill="#F59E0B"><animate attributeName="opacity" values="1;0.2;1" dur="2.6s" repeatCount="indefinite"/></circle>
-    <circle cx="254" cy="236" r="7" fill="#10B981"><animate attributeName="r" values="4;8;4" dur="2.2s" repeatCount="indefinite"/></circle>
-    <circle cx="136" cy="254" r="5" fill="#8B5CF6"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.7s" repeatCount="indefinite"/></circle>
+    <circle cx="112" cy="128" r="6" fill="#F1A782"><animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="242" cy="110" r="5" fill="#EA8A6F"><animate attributeName="opacity" values="1;0.2;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="254" cy="236" r="7" fill="#C9CBA3"><animate attributeName="r" values="4;8;4" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="136" cy="254" r="5" fill="#AA5551"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.7s" repeatCount="indefinite"/></circle>
   </g>
 </svg>
