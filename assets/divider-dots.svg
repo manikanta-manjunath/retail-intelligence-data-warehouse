@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="32" viewBox="0 0 1200 32" role="img" aria-labelledby="title desc">
+  <title id="title">Animated dotted data divider</title>
+  <desc id="desc">Colored data packets travel across a dotted telemetry line.</desc>
+  <defs>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="32" fill="#07111F"/>
+  <path d="M20 16H1180" stroke="#22D3EE" stroke-opacity="0.32" stroke-width="2" stroke-dasharray="2 12"/>
+  <circle r="5" fill="#22D3EE" filter="url(#glow)">
+    <animateMotion dur="4s" repeatCount="indefinite" path="M20 16H1180"/>
+  </circle>
+  <circle r="4" fill="#F59E0B" filter="url(#glow)">
+    <animateMotion dur="4s" begin="-1.3s" repeatCount="indefinite" path="M20 16H1180"/>
+  </circle>
+  <circle r="5" fill="#10B981" filter="url(#glow)">
+    <animateMotion dur="4s" begin="-2.6s" repeatCount="indefinite" path="M20 16H1180"/>
+  </circle>
+</svg>

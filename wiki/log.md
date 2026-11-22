@@ -25,3 +25,4 @@ Entries are append-only and use the format `## [YYYY-MM-DD] operation | subject`
 - Expanded the student report into a complete 30-page, A4-ready Markdown document with explicit print page breaks, 8,000+ words and repository-backed technical evidence.
 - Deepened the report to 14,000+ words and added preprocessing samples plus project, warehouse, ETL, analytics, dashboard, testing and evidence graphs rendered with Mermaid.
 - Redesigned the repository README with an animated hero, verified badges, responsive demo placeholders, tech-stack icons, Mermaid architecture, collapsible setup guidance, roadmap, team table and animated footer.
+- Rebuilt the README as a six-color sci-fi HUD landing page and added eleven repository-owned SMIL SVG assets for rings, scans, particles, progress bars and section transitions.

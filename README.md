@@ -1,246 +1,348 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0F172A,50:06B6D4,100:7C3AED&amp;height=240&amp;section=header&amp;text=Retail%20Intelligence&amp;fontSize=52&amp;fontColor=FFFFFF&amp;animation=fadeIn&amp;fontAlignY=36&amp;desc=15-Year%20Data%20Warehouse%20%E2%80%A2%20Analytics%20%E2%80%A2%20Decision%20Support&amp;descAlignY=58&amp;descSize=18" alt="Retail Intelligence animated header" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&amp;color=0:07111F,20:22D3EE,42:8B5CF6,64:EC4899,82:F59E0B,100:10B981&amp;height=250&amp;section=header&amp;text=RETAIL%20INTELLIGENCE&amp;fontSize=50&amp;fontColor=E6F7FF&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=DATA%20WAREHOUSE%20%E2%80%A2%20MINING%20%E2%80%A2%20FORECASTING%20%E2%80%A2%20DECISION%20SUPPORT&amp;descAlignY=59&amp;descSize=16" alt="Animated futuristic Retail Intelligence header" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=600&amp;size=22&amp;duration=2800&amp;pause=900&amp;color=22D3EE&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=Audited+ETL+%26+Dimensional+Warehousing;15+Years+of+Retail+Sales+Intelligence;Forecasting+%7C+RFM+%7C+FP-Growth+%7C+Anomalies;Built+for+Reproducible+Student+Learning" width="900" alt="Animated typing introduction describing the project capabilities" />
+<img src="assets/hud-logo.svg" width="170" alt="Animated Retail Intelligence HUD logo with rotating data rings" />
+
+<br />
+
+<img src="https://readme-typing-svg.demolab.com?font=Space+Mono&amp;weight=700&amp;size=21&amp;duration=2500&amp;pause=750&amp;color=22D3EE&amp;center=true&amp;vCenter=true&amp;multiline=false&amp;repeat=true&amp;random=false&amp;width=920&amp;height=52&amp;lines=%5B+AUTHENTICATED+DATA+PIPELINE+ONLINE+%5D;%5B+15-YEAR+WAREHOUSE+SIGNAL+LOCKED+%5D;%5B+FORECASTING+%7C+RFM+%7C+FP-GROWTH+%7C+ANOMALIES+%5D;%5B+25%2F25+TESTS+%E2%80%A2+ZERO+DUPLICATE+REPLAY+%5D;%5B+REPRODUCIBLE+RETAIL+INTELLIGENCE+%5D" width="920" alt="Animated terminal messages describing project capabilities" />
 
 <p>
-  <a href="https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse/stargazers"><img src="https://img.shields.io/github/stars/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;labelColor=0F172A&amp;color=22D3EE&amp;logo=github" alt="GitHub stars" /></a>
-  <a href="https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse/network/members"><img src="https://img.shields.io/github/forks/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;labelColor=0F172A&amp;color=7C3AED&amp;logo=github" alt="GitHub forks" /></a>
-  <a href="https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse"><img src="https://img.shields.io/github/languages/top/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;labelColor=0F172A&amp;color=06B6D4&amp;logo=python&amp;logoColor=white" alt="Primary repository language" /></a>
-  <a href="#-testing--verification"><img src="https://img.shields.io/badge/tests-25%2F25%20passing-22D3EE?style=for-the-badge&amp;labelColor=0F172A&amp;logo=pytest&amp;logoColor=white" alt="Twenty-five of twenty-five tests passing" /></a>
-  <a href="#-demo--screenshots"><img src="https://img.shields.io/badge/demo-local%20dashboard-7C3AED?style=for-the-badge&amp;labelColor=0F172A&amp;logo=streamlit&amp;logoColor=white" alt="Local Streamlit dashboard demo" /></a>
-  <a href="LICENSES_AND_DATA_SOURCES.md"><img src="https://img.shields.io/badge/license-educational%20%2F%20source--specific-06B6D4?style=for-the-badge&amp;labelColor=0F172A" alt="Educational and source-specific licensing" /></a>
+  <a href="https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse/stargazers"><img src="https://img.shields.io/github/stars/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;logo=github&amp;logoColor=E6F7FF&amp;labelColor=07111F&amp;color=22D3EE" alt="GitHub stars" /></a>
+  <a href="https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse/network/members"><img src="https://img.shields.io/github/forks/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;logo=github&amp;logoColor=E6F7FF&amp;labelColor=07111F&amp;color=8B5CF6" alt="GitHub forks" /></a>
+  <a href="#-tech-stack"><img src="https://img.shields.io/github/languages/top/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;logo=python&amp;logoColor=E6F7FF&amp;labelColor=07111F&amp;color=EC4899" alt="Primary repository language" /></a>
+  <a href="#-testing--verification"><img src="https://img.shields.io/badge/TESTS-25%2F25%20PASSING-10B981?style=for-the-badge&amp;logo=pytest&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Twenty-five automated tests passing" /></a>
+  <a href="#-live-demo--visual-intelligence"><img src="https://img.shields.io/badge/DEMO-LOCAL%20HUD-F59E0B?style=for-the-badge&amp;logo=streamlit&amp;logoColor=07111F&amp;labelColor=07111F" alt="Local Streamlit dashboard demo" /></a>
+  <a href="LICENSES_AND_DATA_SOURCES.md"><img src="https://img.shields.io/badge/LICENSE-EDUCATIONAL%20%2F%20SOURCE--SPECIFIC-22D3EE?style=for-the-badge&amp;labelColor=07111F" alt="Educational and source-specific licensing" /></a>
 </p>
 
 <p>
-  <a href="#-getting-started"><strong>Get Started</strong></a>
-  ·
-  <a href="wiki/index.md"><strong>Documentation</strong></a>
-  ·
-  <a href="docs/STUDENT_LEARNING_REPORT.md"><strong>30-Page Report</strong></a>
-  ·
-  <a href="docs/STUDENT_LEARNING_PRESENTATION.md"><strong>Presentation</strong></a>
-  ·
-  <a href="docs/VERIFICATION_REPORT.md"><strong>Verified Results</strong></a>
+  <a href="#-overview"><strong>OVERVIEW</strong></a>
+  <code>◆</code>
+  <a href="#-system-capabilities"><strong>CAPABILITIES</strong></a>
+  <code>◆</code>
+  <a href="#-architecture"><strong>ARCHITECTURE</strong></a>
+  <code>◆</code>
+  <a href="#-getting-started"><strong>DEPLOY</strong></a>
+  <code>◆</code>
+  <a href="wiki/index.md"><strong>DOCS</strong></a>
+  <code>◆</code>
+  <a href="docs/STUDENT_LEARNING_REPORT.md"><strong>REPORT</strong></a>
 </p>
 
-<sub>Palette: <code>#0F172A</code> · <code>#22D3EE</code> · <code>#7C3AED</code></sub>
+<sub><code>SYS.STATUS: VERIFIED</code> · <code>WAREHOUSE: 2010–2024</code> · <code>MODE: EDUCATIONAL</code></sub>
 
 </div>
 
----
+<img src="assets/divider-spectrum.svg" width="100%" alt="Animated six-color spectrum divider" />
 
-## Table of Contents
+## Quick Navigation
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Demo and Screenshots](#-demo--screenshots)
-- [Tech Stack](#-tech-stack)
-- [Architecture](#-architecture)
-- [Getting Started](#-getting-started)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Testing and Verification](#-testing--verification)
-- [Roadmap](#-roadmap)
-- [Team](#-team)
-- [Contributing](#-contributing)
-- [License](#-license)
+| Scene | Destination | Scene | Destination |
+| --- | --- | --- | --- |
+| `01` | [Overview](#-overview) | `08` | [Usage](#-usage) |
+| `02` | [System Capabilities](#-system-capabilities) | `09` | [Project Structure](#-project-structure) |
+| `03` | [Live Demo](#-live-demo--visual-intelligence) | `10` | [Testing](#-testing--verification) |
+| `04` | [Tech Stack](#-tech-stack) | `11` | [Roadmap](#-roadmap) |
+| `05` | [Architecture](#-architecture) | `12` | [Team](#-team) |
+| `06` | [Workflow](#-workflow-timeline) | `13` | [Contributing](#-contributing) |
+| `07` | [Getting Started](#-getting-started) | `14` | [License](#-license) |
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:0F172A,50:22D3EE,100:7C3AED&amp;height=3&amp;section=header&amp;animation=fadeIn" alt="Animated section divider" />
+<img src="assets/divider-wave.svg" width="100%" alt="Animated gradient data-wave divider" />
 
-## 🌐 Overview
-
-**Retail Intelligence** is a Walmart-inspired educational data-engineering and analytics platform built with Microsoft SQL Server 2022, Python and Streamlit. It turns authenticated source files into an audited dimensional warehouse, reproducible analytical artifacts and an interactive decision-support dashboard.
-
-The project exists to demonstrate how data provenance, validation, ETL, warehouse modelling, forecasting, mining, testing and presentation work together. The canonical warehouse contains deterministic synthetic educational data—not Walmart internal data—and every reported result is tied to verification evidence.
-
-### Verified project snapshot
-
-| Metric | Verified value |
-| --- | ---: |
-| Historical coverage | **2010-01-01 → 2024-12-31** |
-| Sales lines | **182,176** |
-| Transactions | **73,213** |
-| Reconciled net sales | **16,976,377.1400** |
-| Inventory snapshots | **18,000** |
-| Shipment facts | **4,800** |
-| Repeat-ETL duplicate facts | **0** |
-| Forecast backtest WAPE | **12.96% ± 3.63%** |
-| Unseen-test WAPE | **15.26%** |
-| Automated tests | **25 / 25 passing** |
-
-> [!IMPORTANT]
-> Forecast, clustering, association and anomaly results are generated-data demonstrations. Anomaly precision and recall apply only to authenticated injected high-quantity labels and must not be interpreted as fraud-detection performance.
-
-<div align="center">
-  <img width="520" src="https://github-readme-stats.vercel.app/api/pin/?username=manikanta-manjunath&amp;repo=retail-intelligence-data-warehouse&amp;theme=transparent&amp;title_color=22D3EE&amp;text_color=CBD5E1&amp;icon_color=7C3AED&amp;border_color=334155&amp;bg_color=0F172A" alt="GitHub repository statistics card" />
-</div>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:7C3AED,50:22D3EE,100:0F172A&amp;height=3&amp;section=header&amp;animation=fadeIn" alt="Animated section divider" />
-
-## ✨ Features
-
-| | Capability | What it delivers |
-| :---: | --- | --- |
-| 🔐 | **Authenticated ingestion** | Manifest declarations, row counts and SHA-256 hashes are verified before parsing. |
-| 🧱 | **Dimensional warehouse** | Seven conformed dimensions, three atomic facts, SCD Type 2 product history and analytical marts. |
-| ♻️ | **Repeatable ETL** | Run-scoped staging, immutable source archives, rejection quarantine, transactions and zero-duplicate replay. |
-| 📈 | **Forecasting** | Five rolling-origin folds, an unseen 12-week test and filter-aware weekly forecasts. |
-| 🛒 | **Market-basket mining** | FP-Growth rules with support, confidence and lift across 73,213 baskets. |
-| 👥 | **Customer intelligence** | RFM K-means clustering with standardised features and silhouette evaluation. |
-| 🚨 | **Anomaly review** | Chronological Isolation Forest evaluation plus precision, recall, F1 and explainable problem rules. |
-| 📦 | **Operational analytics** | Inventory ABC/XYZ, stock-risk flags, promotion comparison and supplier scorecards. |
-| 🖥️ | **Interactive dashboard** | Seven Streamlit tabs, live filters, 20 KPI cards, nine tables and safe short-range forecast behavior. |
-| ✅ | **Evidence-driven quality** | Twenty-five automated tests, warehouse assertions, reconciliation and machine-readable reports. |
-
-<details>
-<summary><strong>Explore the complete analytical scope</strong></summary>
-
-The project detects or analyses:
-
-- sales trends, profitability, margin and year-over-year decline;
-- products, categories, stores and sales channels;
-- future weekly sales using leakage-resistant model selection;
-- transaction baskets and embedded product affinities;
-- customer recency, frequency and monetary profiles;
-- stockouts, understock, reorder risk and inventory variability;
-- supplier lead time, late deliveries and partial fills;
-- excessive discounts, low margins, spikes, drops and missing dates;
-- ETL failures, rejected records and data-quality conditions.
-
-</details>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:0F172A,50:22D3EE,100:7C3AED&amp;height=3&amp;section=header&amp;animation=fadeIn" alt="Animated section divider" />
-
-## 🎬 Demo / Screenshots
-
-<div align="center">
-  <img src="assets/demo.gif" width="900" alt="Animated Retail Intelligence dashboard walkthrough placeholder" />
-  <p><sub>Animated walkthrough: executive KPIs → forecasting → customer mining → inventory risk → ETL audit.</sub></p>
-</div>
+## 🌌 Overview
 
 <table>
   <tr>
-    <td width="50%" align="center">
-      <img src="assets/dashboard-overview.png" width="100%" alt="Executive dashboard screenshot placeholder" />
-      <br /><strong>Executive intelligence</strong>
+    <td width="62%" valign="top">
+      <h3>Retail analytics engineered like a mission-control system.</h3>
+      <p><strong>Retail Intelligence</strong> is a Walmart-inspired educational data-engineering and analytics platform built with SQL Server 2022, Python and Streamlit. It authenticates source files, validates business rules, preserves immutable lineage, loads a dimensional warehouse and produces reproducible analytics through a seven-tab decision-support dashboard.</p>
+      <p>The platform exists to demonstrate that trustworthy analytics requires more than a model or chart. Source provenance, fact grain, history, reconciliation, chronological evaluation, testing and transparent limitations are treated as one connected system.</p>
+      <p><strong>Domain:</strong> retail operations, data warehousing, business intelligence and applied data mining.</p>
     </td>
-    <td width="50%" align="center">
-      <img src="assets/forecast-and-mining.png" width="100%" alt="Forecasting and mining dashboard screenshot placeholder" />
-      <br /><strong>Forecasting and mining</strong>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="assets/warehouse-quality.png" width="90%" alt="Warehouse verification and ETL audit screenshot placeholder" />
-      <br /><strong>Warehouse quality and ETL audit</strong>
+    <td width="38%" align="center" valign="middle">
+      <img src="assets/pulse-core.svg" width="100%" alt="Animated verified warehouse intelligence core" />
     </td>
   </tr>
 </table>
 
-> The repository currently provides a **local Streamlit demo**. Add the four files listed in the asset checklist after the README to activate these previews.
+### Verified telemetry
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:7C3AED,50:22D3EE,100:0F172A&amp;height=3&amp;section=header&amp;animation=fadeIn" alt="Animated section divider" />
+| Signal | Verified value | Signal | Verified value |
+| --- | ---: | --- | ---: |
+| Calendar coverage | **2010-01-01 → 2024-12-31** | Product dimension | **150 products** |
+| Sales lines | **182,176** | Inventory snapshots | **18,000** |
+| Transactions | **73,213** | Shipment facts | **4,800** |
+| Reconciled net sales | **16,976,377.1400** | Repeat-load duplicates | **0** |
+| Forecast backtest WAPE | **12.96% ± 3.63%** | Unseen-test WAPE | **15.26%** |
+| Review problems | **6,239** | Automated tests | **25 / 25** |
 
-## 🧰 Tech Stack
+> [!IMPORTANT]
+> The canonical warehouse contains deterministic synthetic educational data, not Walmart internal data. Forecast, association, clustering and anomaly metrics demonstrate the workflow and do not establish production performance.
+
+<details>
+<summary><strong>Open the six-color visual system</strong></summary>
+
+| Role | Name | Hex | Meaning |
+| --- | --- | --- | --- |
+| Dark base | Warehouse Void | `#07111F` | Persistent historical storage and deep-space HUD surface |
+| Primary | Signal Cyan | `#22D3EE` | Data movement, lineage and active telemetry |
+| Secondary | Predictive Violet | `#8B5CF6` | Forecasting, models and analytical depth |
+| Accent 1 | Demand Magenta | `#EC4899` | Customer behavior, baskets and mining signals |
+| Accent 2 | Inventory Amber | `#F59E0B` | Stock, supplier and operational attention |
+| Success | Verified Emerald | `#10B981` | Reconciliation, tests and trusted state |
+
+</details>
+
+<img src="assets/divider-neon.svg" width="100%" alt="Animated pulsing neon divider" />
+
+## ⚡ System Capabilities
+
+<table>
+  <tr>
+    <td width="33%" valign="top"><h3>🔐 Source Lock</h3><p>Manifest declarations, row counts and SHA-256 hashes are checked before parsing or warehouse mutation.</p></td>
+    <td width="33%" valign="top"><h3>🧱 Dimensional Core</h3><p>Seven conformed dimensions, three atomic facts and SCD Type 2 product history preserve analytical meaning.</p></td>
+    <td width="33%" valign="top"><h3>♻️ Replay Safety</h3><p>Run-scoped staging, immutable archives, transactional loading and unique grains produce zero duplicate facts on replay.</p></td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top"><h3>📡 Predictive Signal</h3><p>Five rolling-origin folds and an untouched 12-week test protect weekly forecasting from temporal leakage.</p></td>
+    <td width="33%" valign="top"><h3>🛒 Basket Radar</h3><p>FP-Growth exposes product affinities through support, confidence and lift across 73,213 baskets.</p></td>
+    <td width="33%" valign="top"><h3>👥 Customer Matrix</h3><p>RFM K-means profiles customer recency, frequency and monetary behavior with silhouette evaluation.</p></td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top"><h3>🚨 Anomaly Watch</h3><p>Chronological Isolation Forest evaluation is combined with explainable operational problem rules.</p></td>
+    <td width="33%" valign="top"><h3>📦 Operations Grid</h3><p>Inventory ABC/XYZ, promotion comparison and supplier scorecards surface stock and delivery risk.</p></td>
+    <td width="33%" valign="top"><h3>✅ Evidence Chain</h3><p>Twenty-five tests, verification queries, JSON evidence and linked documentation support every major claim.</p></td>
+  </tr>
+</table>
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=py,docker,git,github,vscode&amp;theme=dark" width="340" alt="Python Docker Git GitHub and Visual Studio Code icons" />
+  <img src="assets/scanner.svg" width="900" alt="Animated data-validation scanner showing authenticated checks" />
 </div>
 
-| Layer | Technologies |
-| --- | --- |
-| **Data platform** | Microsoft SQL Server 2022, T-SQL, Docker Compose |
-| **Application** | Python 3.11+, pandas, pyodbc, PyYAML |
-| **Analytics** | scikit-learn, statsmodels, mlxtend, joblib |
-| **Dashboard** | Streamlit, Plotly |
-| **Quality** | pytest, SQL verification queries, reconciliation reports |
-| **Documentation** | GitHub Markdown, Mermaid, Marp-compatible presentation |
+<details>
+<summary><strong>Capability boundaries and responsible interpretation</strong></summary>
+
+- Injected anomaly labels represent high-quantity cases only; they do not represent fraud.
+- Embedded product affinities make basket rules demonstration evidence rather than an independent consumer discovery.
+- Promotion comparisons are descriptive and do not establish causal lift.
+- Customer identifiers and cluster profiles are generated.
+- Inventory covers a smaller product, store and date subset than the fifteen-year sales history.
+- Public UCI and Kaggle datasets are normalised into source-specific outputs and are not silently mixed into canonical facts.
+
+</details>
+
+<img src="assets/divider-dots.svg" width="100%" alt="Animated dotted telemetry divider" />
+
+## 🎬 Live Demo / Visual Intelligence
+
+<div align="center">
+  <img src="assets/demo.gif" width="920" alt="Main animated walkthrough placeholder for the Retail Intelligence dashboard" />
+  <p><sub><code>DEMO.FEED</code> Executive KPIs → forecasting → mining → inventory → problems → ETL audit</sub></p>
+</div>
+
+### Feature-preview carousel
+
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <img src="assets/feature-forecast.gif" width="100%" alt="Forecasting feature GIF placeholder" />
+      <br /><strong>Forecast Command</strong><br /><sub>Backtests, unseen metrics and future weekly trajectory</sub>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img src="assets/feature-mining.gif" width="100%" alt="Customer and basket mining feature GIF placeholder" />
+      <br /><strong>Mining Matrix</strong><br /><sub>Association rules, RFM clusters and anomaly evidence</sub>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img src="assets/feature-etl.gif" width="100%" alt="ETL and verification feature GIF placeholder" />
+      <br /><strong>ETL Telemetry</strong><br /><sub>Run status, reconciliation and repeat-load evidence</sub>
+    </td>
+  </tr>
+</table>
+
+### Screenshots
+
+<table>
+  <tr>
+    <td width="50%" align="center"><img src="assets/dashboard-overview.png" width="100%" alt="Executive dashboard screenshot placeholder" /><br /><strong>Executive HUD</strong></td>
+    <td width="50%" align="center"><img src="assets/problems-view.png" width="100%" alt="Problems and precision dashboard screenshot placeholder" /><br /><strong>Problem Radar</strong></td>
+  </tr>
+</table>
+
+<div align="center">
+  <img src="assets/architecture.gif" width="900" alt="Animated architecture workflow GIF placeholder" />
+  <p><sub><code>ARCH.FLOW</code> Source authentication → warehouse → analytics → dashboard</sub></p>
+</div>
+
+> The repository currently provides a local Streamlit experience. The GIF and screenshot paths are intentionally reserved for the final visual captures listed in the asset checklist.
+
+<img src="assets/divider-pulse.svg" width="100%" alt="Animated pulsing gradient divider" />
+
+## 🧬 Tech Stack
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=py,docker,git,github,vscode&amp;theme=dark" width="360" alt="Python Docker Git GitHub and Visual Studio Code icons" />
+</div>
+
+### Data and engineering
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11%2B-22D3EE?style=flat-square&amp;logo=python&amp;logoColor=white&amp;labelColor=0F172A" alt="Python 3.11 or newer" />
-  <img src="https://img.shields.io/badge/SQL%20Server-2022-7C3AED?style=flat-square&amp;logo=microsoftsqlserver&amp;logoColor=white&amp;labelColor=0F172A" alt="Microsoft SQL Server 2022" />
-  <img src="https://img.shields.io/badge/Streamlit-dashboard-22D3EE?style=flat-square&amp;logo=streamlit&amp;logoColor=white&amp;labelColor=0F172A" alt="Streamlit dashboard" />
-  <img src="https://img.shields.io/badge/Docker-Compose-7C3AED?style=flat-square&amp;logo=docker&amp;logoColor=white&amp;labelColor=0F172A" alt="Docker Compose" />
+  <img src="https://img.shields.io/badge/PYTHON-3.11%2B-22D3EE?style=for-the-badge&amp;logo=python&amp;logoColor=07111F&amp;labelColor=07111F" alt="Python 3.11 or newer" />
+  <img src="https://img.shields.io/badge/SQL%20SERVER-2022-8B5CF6?style=for-the-badge&amp;logo=microsoftsqlserver&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Microsoft SQL Server 2022" />
+  <img src="https://img.shields.io/badge/DOCKER-COMPOSE-22D3EE?style=for-the-badge&amp;logo=docker&amp;logoColor=07111F&amp;labelColor=07111F" alt="Docker Compose" />
+  <img src="https://img.shields.io/badge/T--SQL-WAREHOUSE-8B5CF6?style=for-the-badge&amp;labelColor=07111F" alt="T-SQL data warehouse" />
 </p>
 
-## 🏗️ Architecture
+### Analytics and experience
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PANDAS-DATA%20FRAMES-EC4899?style=for-the-badge&amp;logo=pandas&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="pandas data processing" />
+  <img src="https://img.shields.io/badge/SCIKIT--LEARN-MODELS-F59E0B?style=for-the-badge&amp;logo=scikitlearn&amp;logoColor=07111F&amp;labelColor=07111F" alt="scikit-learn models" />
+  <img src="https://img.shields.io/badge/STATSMODELS-FORECASTING-8B5CF6?style=for-the-badge&amp;labelColor=07111F" alt="statsmodels forecasting" />
+  <img src="https://img.shields.io/badge/STREAMLIT-HUD-EC4899?style=for-the-badge&amp;logo=streamlit&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Streamlit dashboard" />
+  <img src="https://img.shields.io/badge/PLOTLY-VISUALS-22D3EE?style=for-the-badge&amp;logo=plotly&amp;logoColor=07111F&amp;labelColor=07111F" alt="Plotly visualisations" />
+</p>
+
+### Quality and documentation
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PYTEST-25%20PASSING-10B981?style=for-the-badge&amp;logo=pytest&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="pytest quality suite" />
+  <img src="https://img.shields.io/badge/MERMAID-ARCHITECTURE-8B5CF6?style=for-the-badge&amp;logo=mermaid&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Mermaid architecture diagrams" />
+  <img src="https://img.shields.io/badge/MARKDOWN-DOCUMENTATION-22D3EE?style=for-the-badge&amp;logo=markdown&amp;logoColor=07111F&amp;labelColor=07111F" alt="Markdown documentation" />
+  <img src="https://img.shields.io/badge/MARP-6%20SLIDES-EC4899?style=for-the-badge&amp;labelColor=07111F" alt="Marp six-slide presentation" />
+</p>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=slice&amp;color=0:07111F,20:22D3EE,48:8B5CF6,72:EC4899,100:07111F&amp;height=105&amp;section=header&amp;reversal=true&amp;animation=fadeIn" alt="Animated slice transition into architecture" />
+
+## 🛰️ Architecture
+
+<div align="center">
+  <img src="assets/radar-ring.svg" width="300" alt="Animated rotating analytics radar" />
+</div>
 
 ```mermaid
+%%{init: {'theme':'base','themeVariables': {'background':'#07111F','primaryColor':'#0B1F35','primaryTextColor':'#E6F7FF','primaryBorderColor':'#22D3EE','lineColor':'#8B5CF6','secondaryColor':'#EC4899','tertiaryColor':'#10B981','fontFamily':'monospace'}}}%%
 flowchart TB
-    subgraph S[Source Layer]
-        GEN[Deterministic synthetic generator]
-        PUB[UCI and Kaggle adapters]
-        MAN[Manifest hashes counts and limitations]
+    subgraph SRC["SOURCE GRID"]
+        GEN["Synthetic Generator"]
+        PUB["UCI and Kaggle Adapters"]
+        MAN["Manifest + SHA-256"]
         GEN --> MAN
         PUB --> MAN
     end
 
-    subgraph E[Engineering Layer]
-        VAL[Typed and business validation]
-        ARC[Immutable JSON archive]
-        STG[Run-scoped staging]
-        ETL[Transactional ETL]
-        AUD[Audit and quality history]
+    subgraph ENG["ENGINEERING CORE"]
+        VAL["Typed Validation"]
+        REJ["Rejection Quarantine"]
+        ARC["Immutable JSON Archive"]
+        STG["Run-Scoped Staging"]
+        ETL["Transactional ETL"]
+        AUD["Audit Telemetry"]
         MAN --> VAL
-        VAL --> ARC
-        VAL --> STG
+        VAL -->|invalid| REJ
+        VAL -->|accepted| ARC
+        VAL -->|accepted| STG
         STG --> ETL
         ETL --> AUD
     end
 
-    subgraph W[SQL Server Warehouse]
-        DIM[Seven conformed dimensions]
-        FACT[Sales inventory shipment facts]
-        MART[Reporting and model-ready marts]
+    subgraph DW["WAREHOUSE MATRIX"]
+        DIM["7 Conformed Dimensions"]
+        FACT["3 Atomic Facts"]
+        MART["11 Views and Marts"]
         ETL --> DIM
         ETL --> FACT
         DIM --> MART
         FACT --> MART
     end
 
-    subgraph A[Analytics and Experience]
-        FC[Forecasting]
-        MINING[Basket RFM and anomalies]
-        OPS[Inventory promotion suppliers]
-        DASH[Seven-tab Streamlit dashboard]
+    subgraph AI["INTELLIGENCE LAYER"]
+        FC["Rolling Forecasts"]
+        MB["FP-Growth Baskets"]
+        RFM["RFM Clusters"]
+        AN["Anomaly + Problems"]
+        OPS["Inventory + Suppliers"]
+        DASH["Streamlit HUD"]
         MART --> FC
-        MART --> MINING
+        MART --> MB
+        MART --> RFM
+        MART --> AN
         MART --> OPS
         FC --> DASH
-        MINING --> DASH
+        MB --> DASH
+        RFM --> DASH
+        AN --> DASH
         OPS --> DASH
         AUD --> DASH
     end
 
-    TEST[25 tests and warehouse verification] --> E
-    TEST --> W
-    TEST --> A
+    QA["25 Tests + Verification"] -.-> ENG
+    QA -.-> DW
+    QA -.-> AI
+
+    classDef cyan fill:#0B1F35,stroke:#22D3EE,color:#E6F7FF,stroke-width:2px;
+    classDef violet fill:#15112C,stroke:#8B5CF6,color:#E6F7FF,stroke-width:2px;
+    classDef magenta fill:#261127,stroke:#EC4899,color:#E6F7FF,stroke-width:2px;
+    classDef amber fill:#2B1C08,stroke:#F59E0B,color:#E6F7FF,stroke-width:2px;
+    classDef green fill:#08251C,stroke:#10B981,color:#E6F7FF,stroke-width:2px;
+    class GEN,PUB,MAN cyan;
+    class VAL,REJ,ARC,STG,ETL,AUD violet;
+    class DIM,FACT,MART magenta;
+    class FC,MB,RFM,AN,OPS amber;
+    class DASH,QA green;
 ```
 
 <details>
-<summary><strong>Warehouse schemas and fact grains</strong></summary>
+<summary><strong>Open warehouse schemas and grains</strong></summary>
 
-| Schema | Responsibility |
+| Schema | Mission |
 | --- | --- |
 | `raw` | Current accepted source state and immutable original-row archives |
 | `stg` | Typed records isolated by `ETLRunID` |
-| `dw` | Conformed dimensions, historical product versions and atomic facts |
+| `dw` | Conformed dimensions, SCD history and atomic facts |
 | `mart` | Business summaries and model-ready views |
 | `audit` | Runs, manifests, rejections, data quality and synthetic labels |
 
-| Fact | Grain |
+| Fact | Atomic grain |
 | --- | --- |
 | `dw.FactSales` | One product line in one transaction |
 | `dw.FactInventorySnapshot` | One product, store and snapshot date |
 | `dw.FactShipment` | One supplier shipment |
 
-Read the [architecture reference](docs/ARCHITECTURE.md), [warehouse model](wiki/data-model.md) and [ETL pipeline](wiki/etl-pipeline.md) for field-level behavior.
+Read [Architecture](docs/ARCHITECTURE.md), [Warehouse Model](wiki/data-model.md) and [ETL Pipeline](wiki/etl-pipeline.md).
 
 </details>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:0F172A,50:22D3EE,100:7C3AED&amp;height=3&amp;section=header&amp;animation=fadeIn" alt="Animated section divider" />
+<img src="assets/divider-spectrum.svg" width="100%" alt="Animated spectrum transition into the workflow timeline" />
+
+## ⏱️ Workflow Timeline
+
+```mermaid
+%%{init: {'theme':'base','themeVariables': {'background':'#07111F','primaryColor':'#0B1F35','primaryTextColor':'#E6F7FF','primaryBorderColor':'#22D3EE','lineColor':'#8B5CF6','fontFamily':'monospace'}}}%%
+flowchart LR
+    A["01 AUTHENTICATE<br/>manifest hashes counts"] --> B["02 VALIDATE<br/>types ranges references"]
+    B --> C["03 ARCHIVE<br/>original JSON rows"]
+    C --> D["04 STAGE<br/>ETL run isolation"]
+    D --> E["05 LOAD<br/>dimensions and facts"]
+    E --> F["06 RECONCILE<br/>grains formulas totals"]
+    F --> G["07 ANALYSE<br/>forecast mine detect"]
+    G --> H["08 PRESENT<br/>filter-aware dashboard"]
+    H --> I["09 VERIFY<br/>tests evidence limits"]
+
+    classDef c1 fill:#0B1F35,stroke:#22D3EE,color:#E6F7FF;
+    classDef c2 fill:#15112C,stroke:#8B5CF6,color:#E6F7FF;
+    classDef c3 fill:#261127,stroke:#EC4899,color:#E6F7FF;
+    classDef c4 fill:#2B1C08,stroke:#F59E0B,color:#E6F7FF;
+    classDef c5 fill:#08251C,stroke:#10B981,color:#E6F7FF;
+    class A,B c1;
+    class C,D c2;
+    class E,F c3;
+    class G,H c4;
+    class I c5;
+```
+
+<img src="assets/divider-neon.svg" width="100%" alt="Animated neon transition into getting started" />
 
 ## 🚀 Getting Started
 
@@ -249,10 +351,10 @@ Read the [architecture reference](docs/ARCHITECTURE.md), [warehouse model](wiki/
 - Python **3.11+**
 - Docker with Compose
 - Git
-- Approximately **1 GB** for the Python environment and generated artifacts
-- Ports **1433** for SQL Server and **8501** for Streamlit
+- Approximately **1 GB** for the environment and reproducible artifacts
+- Ports **1433** and **8501** available locally
 
-### Quick start
+### Mission launch
 
 ```bash
 git clone https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse.git
@@ -274,19 +376,17 @@ docker compose up -d
 Open [http://localhost:8501](http://localhost:8501).
 
 <details>
-<summary><strong>Full installation and configuration guide</strong></summary>
+<summary><strong>Full installation and configuration sequence</strong></summary>
 
-### 1. Configure the environment
-
-Copy the example environment file and set a strong local SQL Server password:
+### Configure secrets
 
 ```bash
 cp .env.example .env
 ```
 
-Edit `SQL_PASSWORD` in `.env`. Do not commit `.env`. If the SQL Server volume already exists, changing only the Compose variable does not change the password stored inside that volume.
+Set a strong `SQL_PASSWORD` in `.env`. Never commit the file. A password change in Compose does not alter the credential inside an already-initialised SQL Server volume.
 
-### 2. Create the Python environment
+### Build the Python environment
 
 ```bash
 python3 -m venv .venv
@@ -294,22 +394,22 @@ python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
-### 3. Start and inspect SQL Server
+### Start SQL Server
 
 ```bash
 docker compose up -d
 docker ps --filter name=retail_intelligence_dw
 ```
 
-### 4. Create database objects
+### Create non-destructive database objects
 
 ```bash
 .venv/bin/python -m src.cli setup
 ```
 
-The setup command is non-destructive. It excludes reset, SCD demonstration and reporting-query scripts.
+The setup allowlist excludes reset, SCD demonstration and reporting-query scripts.
 
-### 5. Generate and load data
+### Generate, load, verify and analyse
 
 ```bash
 .venv/bin/python -m src.cli generate \
@@ -319,13 +419,7 @@ The setup command is non-destructive. It excludes reset, SCD demonstration and r
 
 .venv/bin/python -m src.cli etl \
   --input data/synthetic/small_seed42
-```
 
-Generation refuses to overwrite an existing generated directory.
-
-### 6. Verify, analyse and launch
-
-```bash
 .venv/bin/python -m src.cli verify
 .venv/bin/python -m src.cli analytics
 .venv/bin/streamlit run dashboard/app.py
@@ -334,20 +428,14 @@ Generation refuses to overwrite an existing generated directory.
 </details>
 
 <details>
-<summary><strong>Generate the complete 2010–2024 warehouse</strong></summary>
-
-Generate the non-overlapping 2010–2022 historical extension:
+<summary><strong>Build the complete 2010–2024 warehouse</strong></summary>
 
 ```bash
 .venv/bin/python -m src.cli generate \
   --mode historical_15y \
   --seed 42 \
   --output data/synthetic/historical_2010_2022_seed42
-```
 
-Load the historical extension, verify the warehouse and regenerate analytics:
-
-```bash
 .venv/bin/python -m src.cli etl \
   --input data/synthetic/historical_2010_2022_seed42
 
@@ -355,29 +443,29 @@ Load the historical extension, verify the warehouse and regenerate analytics:
 .venv/bin/python -m src.cli analytics
 ```
 
-The historical identifiers use safe prefixes so the extension does not overwrite the existing 2023–2024 source records.
+Historical business keys use safe prefixes so the extension does not overwrite later source records.
 
 </details>
 
-## 🧭 Usage
+<img width="100%" src="https://capsule-render.vercel.app/api?type=shark&amp;color=0:07111F,30:8B5CF6,55:EC4899,78:F59E0B,100:07111F&amp;height=95&amp;section=header&amp;animation=fadeIn" alt="Animated shark transition into usage" />
 
-| Task | Command |
+## 🎛️ Usage
+
+| Command channel | Instruction |
 | --- | --- |
-| Create SQL objects | `.venv/bin/python -m src.cli setup` |
-| Generate synthetic input | `.venv/bin/python -m src.cli generate --mode small --seed 42 --output data/synthetic/small_seed42` |
-| Run ETL | `.venv/bin/python -m src.cli etl --input data/synthetic/small_seed42` |
+| Initialise warehouse | `.venv/bin/python -m src.cli setup` |
+| Generate source data | `.venv/bin/python -m src.cli generate --mode small --seed 42 --output data/synthetic/small_seed42` |
+| Run audited ETL | `.venv/bin/python -m src.cli etl --input data/synthetic/small_seed42` |
 | Verify warehouse | `.venv/bin/python -m src.cli verify` |
-| Run analytics | `.venv/bin/python -m src.cli analytics` |
-| Launch dashboard | `./run_dashboard.sh` |
-| Run every test | `.venv/bin/python -m pytest -q tests` |
-| Run non-integration tests | `.venv/bin/python -m pytest -q tests -m "not integration"` |
+| Generate analytics | `.venv/bin/python -m src.cli analytics` |
+| Launch HUD | `./run_dashboard.sh` |
+| Execute all tests | `.venv/bin/python -m pytest -q tests` |
+| Execute non-SQL tests | `.venv/bin/python -m pytest -q tests -m "not integration"` |
 
 <details>
-<summary><strong>Public dataset adapters</strong></summary>
+<summary><strong>Public-source adapter commands</strong></summary>
 
-The adapters preserve each source’s native grain and do not silently load incompatible records into canonical facts.
-
-### UCI Online Retail or Online Retail II
+### UCI Online Retail
 
 ```bash
 .venv/bin/python -m src.cli adapt-public \
@@ -386,7 +474,7 @@ The adapters preserve each source’s native grain and do not silently load inco
   --output data/processed/uci-online-retail
 ```
 
-### Walmart weekly store-department sales
+### Walmart weekly forecasting data
 
 ```bash
 .venv/bin/python -m src.cli adapt-public \
@@ -397,76 +485,52 @@ The adapters preserve each source’s native grain and do not silently load inco
   --output data/processed/walmart-weekly
 ```
 
-Recommended sources:
+- [UCI Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii) — CC BY 4.0.
+- [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail) — CC BY 4.0.
+- [Walmart Recruiting — Store Sales Forecasting](https://www.kaggle.com/competitions/walmart-recruiting-store-sales-forecasting/data) — Kaggle terms apply.
 
-- [UCI Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii) — 1,067,371 invoice lines, CC BY 4.0.
-- [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail) — 541,909 invoice lines, CC BY 4.0.
-- [Walmart Recruiting — Store Sales Forecasting](https://www.kaggle.com/competitions/walmart-recruiting-store-sales-forecasting/data) — competition terms and Kaggle login required.
-
-Store original downloads under `data/raw/public/`, which is ignored by Git.
+Original public downloads belong under `data/raw/public/`, which is ignored by Git.
 
 </details>
 
 <details>
-<summary><strong>Safety rules and common questions</strong></summary>
+<summary><strong>Operational safety console</strong></summary>
 
-### Can I run the reset SQL script?
-
-Do not run `sql/13_reset_demo_data.sql` against data you need. It is intentionally excluded from normal setup.
-
-### Why does a short forecast range show an information message?
-
-Dynamic forecasting currently requires at least 128 complete weeks. Shorter filtered periods show a clear notice rather than raising an application error.
-
-### Are the anomalies fraud?
-
-No. Labels cover only deterministic injected high-quantity cases. Large legitimate orders can be flagged, and human review is required.
-
-### Are promotion results causal?
-
-No. Promotion comparisons are descriptive and do not establish causal lift.
-
-### Is the data real Walmart data?
-
-No. The canonical warehouse is deterministic synthetic educational data. Public adapters keep UCI and Kaggle data source-separated.
+- Do not run `sql/13_reset_demo_data.sql` against data you need.
+- Dashboard forecasts require at least 128 complete weeks for the current configuration.
+- Anomaly flags require human review and do not establish fraud.
+- Promotion comparisons are descriptive, not causal.
+- UCI, Kaggle and synthetic sources must remain visibly separated.
+- Every analytical report records a warehouse signature and limitation statements.
 
 </details>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:7C3AED,50:22D3EE,100:0F172A&amp;height=3&amp;section=header&amp;animation=fadeIn" alt="Animated section divider" />
+<img src="assets/divider-dots.svg" width="100%" alt="Animated dotted transition into project structure" />
 
 ## 🗂️ Project Structure
 
 ```text
 retail-intelligence-data-warehouse/
+├── assets/                     # Animated HUD SVGs and visual captures
 ├── config/                     # Application and model configuration
 ├── dashboard/
-│   └── app.py                  # Seven-tab Streamlit dashboard
-├── data/                       # Generated and public source workspaces
+│   └── app.py                  # Seven-tab Streamlit command centre
+├── data/                       # Generated and public-source workspaces
 ├── docs/
 │   ├── ARCHITECTURE.md
 │   ├── STUDENT_LEARNING_REPORT.md
 │   ├── STUDENT_LEARNING_PRESENTATION.md
 │   └── VERIFICATION_REPORT.md
 ├── models/                     # Reproducible trained-model outputs
-├── reports/generated/          # ETL, verification and analytics evidence
-├── sql/
-│   ├── 00_create_database.sql
-│   ├── 01_create_schemas.sql
-│   ├── 02_create_source_tables.sql
-│   ├── 03_create_dimensions.sql
-│   ├── 04_create_fact_tables.sql
-│   ├── 05_create_constraints_indexes.sql
-│   ├── 06_create_etl_procedures.sql
-│   ├── 07_create_warehouse_views.sql
-│   ├── 08_create_data_marts.sql
-│   └── 09-14 verification and reliability SQL
+├── reports/generated/          # ETL verification and analytics evidence
+├── sql/                        # Database schemas dimensions facts marts and reliability
 ├── src/
 │   ├── analytics/              # Forecasting mining and problem detection
 │   ├── db/                     # SQL Server connection and script execution
 │   ├── etl/                    # Validation loading and verification
 │   ├── ingestion/              # Synthetic generator and public adapters
 │   ├── utils/                  # Configuration and logging
-│   └── cli.py                  # Project command-line interface
+│   └── cli.py                  # Project command interface
 ├── tests/                      # Twenty-five automated tests
 ├── wiki/                       # Interlinked project documentation
 ├── docker-compose.yml
@@ -474,57 +538,77 @@ retail-intelligence-data-warehouse/
 └── run_dashboard.sh
 ```
 
+<img src="assets/divider-pulse.svg" width="100%" alt="Animated gradient transition into testing" />
+
 ## 🧪 Testing & Verification
 
 ```bash
-# Complete suite, including local SQL Server integration
 .venv/bin/python -m pytest -q tests
-
-# Tests that do not require SQL Server
 .venv/bin/python -m pytest -q tests -m "not integration"
-
-# Read-only warehouse verification
 .venv/bin/python -m src.cli verify
 ```
 
-| Verification area | Confirmed result |
+| Integrity channel | Verified status |
 | --- | --- |
-| Fact-grain duplicates | Zero |
-| Orphaned sales facts | Zero |
-| Sales formula errors | Zero |
-| Product-history overlaps | Zero |
-| Temporal product-join errors | Zero |
-| Calendar gaps | Zero |
-| Source-to-fact count differences | Zero |
-| Source-to-fact sales amount differences | Zero |
+| Fact-grain duplicates | `0` |
+| Orphaned sales facts | `0` |
+| Sales formula errors | `0` |
+| Product-history overlaps | `0` |
+| Temporal product-join errors | `0` |
+| Calendar gaps | `0` |
+| Source-count differences | `0` |
+| Source sales-amount differences | `0` |
 
-Machine-readable evidence:
+<div align="center">
 
-- [`reports/generated/warehouse_verification.json`](reports/generated/warehouse_verification.json)
-- [`reports/generated/analytics/analytics_report.json`](reports/generated/analytics/analytics_report.json)
-- [`reports/generated/etl_run_*.json`](reports/generated/)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=manikanta-manjunath&amp;repo=retail-intelligence-data-warehouse&amp;theme=transparent&amp;title_color=22D3EE&amp;text_color=E6F7FF&amp;icon_color=F59E0B&amp;border_color=8B5CF6&amp;bg_color=07111F" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=manikanta-manjunath&amp;repo=retail-intelligence-data-warehouse&amp;theme=transparent&amp;title_color=6D28D9&amp;text_color=07111F&amp;icon_color=D97706&amp;border_color=0891B2&amp;bg_color=F8FAFC" />
+  <img width="520" src="https://github-readme-stats.vercel.app/api/pin/?username=manikanta-manjunath&amp;repo=retail-intelligence-data-warehouse&amp;theme=transparent&amp;title_color=22D3EE&amp;text_color=E6F7FF&amp;icon_color=F59E0B&amp;border_color=8B5CF6&amp;bg_color=07111F" alt="Responsive GitHub repository statistics card" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=manikanta-manjunath&amp;bg_color=07111F&amp;color=22D3EE&amp;line=8B5CF6&amp;point=F59E0B&amp;area_color=EC4899&amp;area=true&amp;hide_border=true" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=manikanta-manjunath&amp;bg_color=F8FAFC&amp;color=0E7490&amp;line=6D28D9&amp;point=D97706&amp;area_color=DB2777&amp;area=true&amp;hide_border=true" />
+  <img width="920" src="https://github-readme-activity-graph.vercel.app/graph?username=manikanta-manjunath&amp;bg_color=07111F&amp;color=22D3EE&amp;line=8B5CF6&amp;point=F59E0B&amp;area_color=EC4899&amp;area=true&amp;hide_border=true" alt="Responsive animated GitHub activity graph" />
+</picture>
+
+</div>
+
+Evidence files:
+
+- [Warehouse verification JSON](reports/generated/warehouse_verification.json)
+- [Analytics report JSON](reports/generated/analytics/analytics_report.json)
+- [ETL run evidence](reports/generated/)
 - [Human-readable verification report](docs/VERIFICATION_REPORT.md)
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:0F172A,50:22D3EE,100:7C3AED&amp;height=3&amp;section=header&amp;animation=fadeIn" alt="Animated section divider" />
+<img src="assets/divider-spectrum.svg" width="100%" alt="Animated spectrum transition into the roadmap" />
 
 ## 🗺️ Roadmap
 
-- [x] Audited canonical ingestion and immutable row archive
+<div align="center">
+  <img src="assets/progress-bars.svg" width="900" alt="Animated roadmap progress bars" />
+</div>
+
+- [x] Authenticated canonical ingestion
+- [x] Immutable source-row archive and rejection quarantine
 - [x] Fifteen-year warehouse coverage
-- [x] Conformed dimensions and atomic fact tables
+- [x] Conformed dimensions and atomic facts
 - [x] Idempotent historical replay
-- [x] Rolling-origin forecast evaluation
-- [x] Association rules, RFM clustering and anomaly review
-- [x] Filter-aware seven-tab Streamlit dashboard
-- [x] Twenty-five automated tests and machine-readable verification
-- [x] Professional 30-page academic report and six-slide presentation
+- [x] Rolling-origin forecasting and unseen test
+- [x] Association mining, RFM clustering and anomaly review
+- [x] Filter-aware seven-tab dashboard
+- [x] Twenty-five tests and machine-readable verification
+- [x] Professional report and six-slide presentation
 - [ ] Load UCI and Walmart sources into provenance-preserving marts
 - [ ] Add forecast confidence intervals and segment-level evaluation
 - [ ] Add category-specific anomaly models and review-outcome logging
-- [ ] Add GitHub Actions for tests, SQL checks and link validation
+- [ ] Add GitHub Actions for automated quality gates
 - [ ] Add authentication, role-based views and secret management
-- [ ] Publish a hosted demonstration using non-sensitive synthetic data
-- [ ] Add data-freshness, model-drift and ETL-duration monitoring
+- [ ] Publish a hosted synthetic-data demonstration
+- [ ] Monitor data freshness, ETL duration and model drift
+
+<img src="assets/particles.svg" width="100%" alt="Animated floating data particles transition into the team section" />
 
 ## 👥 Team
 
@@ -534,78 +618,80 @@ Machine-readable evidence:
   <tr>
     <td align="center" width="50%">
       <a href="https://github.com/manikanta-manjunath">
-        <img src="https://github.com/manikanta-manjunath.png?size=120" width="110" alt="Manikanta M GitHub avatar" />
-        <br />
-        <strong>Manikanta M</strong>
+        <img src="https://github.com/manikanta-manjunath.png?size=140" width="120" alt="Manikanta M GitHub avatar" />
+        <br /><strong>MANIKANTA M</strong>
       </a>
-      <br />
-      <sub>1GA24CI069 · Student contributor</sub>
+      <br /><sub><code>1GA24CI069</code></sub>
+      <br /><sub>Student Contributor</sub>
     </td>
     <td align="center" width="50%">
-      <img src="https://github.com/identicons/chinmay-gowda-j.png?size=120" width="110" alt="Placeholder GitHub identicon for Chinmay Gowda J" />
-      <br />
-      <strong>Chinmay Gowda J</strong>
-      <br />
-      <sub>1GA24CI0XX · Student contributor</sub>
-      <br />
-      <sub>GitHub profile link to be added</sub>
+      <img src="https://github.com/identicons/chinmay-gowda-j.png?size=140" width="120" alt="Placeholder GitHub identicon for Chinmay Gowda J" />
+      <br /><strong>CHINMAY GOWDA J</strong>
+      <br /><sub><code>1GA24CI0XX</code></sub>
+      <br /><sub>Student Contributor · GitHub link pending</sub>
     </td>
   </tr>
 </table>
 
 </div>
 
+<img src="assets/divider-wave.svg" width="100%" alt="Animated wave transition into contributing" />
+
 ## 🤝 Contributing
 
-Contributions that improve correctness, reproducibility, documentation or accessibility are welcome.
+Contributions that improve correctness, reproducibility, accessibility or source transparency are welcome.
 
 1. Fork the repository.
 2. Create a focused branch: `git switch -c feature/your-change`.
-3. Make the change without committing private data, `.env` files or downloaded public datasets.
+3. Make the change without committing `.env`, credentials or downloaded public datasets.
 4. Run `.venv/bin/python -m pytest -q tests`.
 5. Run `.venv/bin/python -m src.cli verify` when warehouse behavior changes.
-6. Update documentation and generated evidence when claims change.
-7. Open a pull request describing the problem, solution, validation and limitations.
+6. Update documentation and generated evidence when a claim changes.
+7. Open a pull request describing the problem, implementation, validation and limitations.
 
 <details>
-<summary><strong>Contribution quality checklist</strong></summary>
+<summary><strong>Contribution gate checklist</strong></summary>
 
-- [ ] Fact grains and source provenance remain explicit.
-- [ ] Synthetic, UCI and Kaggle data remain visibly separated.
-- [ ] New ETL behavior is idempotent or documents why it cannot be.
-- [ ] Time-series evaluation preserves chronology.
-- [ ] Model results include appropriate metrics and limitations.
-- [ ] Tests cover the new behavior.
-- [ ] Local Markdown links resolve.
-- [ ] No credentials, raw public downloads or sensitive data are committed.
+- [ ] Fact grains and provenance remain explicit.
+- [ ] Synthetic, UCI and Kaggle sources remain separated.
+- [ ] New ETL behavior is idempotent or documents its retry semantics.
+- [ ] Time-series evaluation remains chronological.
+- [ ] Model metrics include limitations.
+- [ ] New behavior has automated coverage.
+- [ ] Markdown links and Mermaid diagrams render.
+- [ ] No credentials or raw public downloads are committed.
 
 </details>
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:07111F,20:10B981,45:22D3EE,70:8B5CF6,100:07111F&amp;height=70&amp;section=header&amp;animation=fadeIn" alt="Animated rectangular transition into licensing" />
+
 ## 📄 License
 
-This repository is an **educational project**. It does not currently declare one blanket open-source software licence for every file.
+This repository is an **educational project** and does not currently declare one blanket open-source software licence for every file.
 
 - Synthetic project data is generated for demonstration and testing.
-- UCI datasets are governed by their published CC BY 4.0 terms and attribution requirements.
-- Walmart competition data is governed by the current Kaggle competition rules.
-- Third-party libraries retain their own licences.
+- UCI datasets remain governed by their published CC BY 4.0 terms and attribution requirements.
+- Walmart competition data remains governed by the current Kaggle rules.
+- Third-party libraries retain their respective licences.
 
 Review [LICENSES_AND_DATA_SOURCES.md](LICENSES_AND_DATA_SOURCES.md) before redistributing code, data or generated artifacts.
 
----
+<img src="assets/divider-neon.svg" width="100%" alt="Animated final neon divider" />
 
 <div align="center">
 
-### If this project helped you learn, consider giving it a ⭐
+### `[ TRANSMISSION COMPLETE ]`
+
+<h3>If this repository helped you learn, illuminate the signal with a ⭐</h3>
 
 <a href="https://github.com/manikanta-manjunath/retail-intelligence-data-warehouse">
-  <img src="https://img.shields.io/badge/Star%20this%20repository-22D3EE?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;labelColor=0F172A" alt="Star this repository on GitHub" />
+  <img src="https://img.shields.io/badge/STAR%20THIS%20REPOSITORY-22D3EE?style=for-the-badge&amp;logo=github&amp;logoColor=07111F&amp;labelColor=07111F" alt="Star this repository on GitHub" />
 </a>
 
 <br /><br />
 
-<sub>Built for transparent, reproducible and responsible retail analytics.</sub>
+<sub><code>BUILD.TRANSPARENT</code> · <code>DATA.REPRODUCIBLE</code> · <code>CLAIMS.VERIFIED</code></sub>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:7C3AED,50:06B6D4,100:0F172A&amp;height=150&amp;section=footer&amp;animation=fadeIn" alt="Animated footer wave" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:10B981,20:F59E0B,42:EC4899,64:8B5CF6,82:22D3EE,100:07111F&amp;height=170&amp;section=footer&amp;animation=fadeIn" alt="Animated six-color footer wave" />
 
 </div>
