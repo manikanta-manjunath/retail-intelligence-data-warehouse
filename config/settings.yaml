@@ -1,0 +1,62 @@
+database:
+  server: "localhost,1433"
+  database: "RetailIntelligenceDW"
+  username: "sa"
+  driver: "ODBC Driver 18 for SQL Server"
+  dialect_driver: "mssql+pymssql"
+  encrypt: true
+  trust_server_certificate: true
+  timeout: 30
+
+schemas:
+  raw: "raw"
+  staging: "stg"
+  warehouse: "dw"
+  marts: "mart"
+  audit: "audit"
+
+modes:
+  small:
+    transactions: 25000
+    stores: 10
+    products: 150
+    customers: 500
+    suppliers: 20
+    date_start: "2023-01-01"
+    date_end: "2024-12-31"
+  medium:
+    transactions: 100000
+    stores: 45
+    products: 500
+    customers: 2000
+    suppliers: 50
+    date_start: "2022-01-01"
+    date_end: "2024-12-31"
+  large:
+    transactions: 500000
+    stores: 100
+    products: 1500
+    customers: 10000
+    suppliers: 100
+    date_start: "2021-01-01"
+    date_end: "2024-12-31"
+  historical_15y:
+    transactions: 180000
+    stores: 10
+    products: 150
+    customers: 500
+    suppliers: 20
+    shipments: 4000
+    date_start: "2010-01-01"
+    date_end: "2022-12-31"
+    id_prefix: "HIST-"
+    annual_growth_rate: 0.025
+    anomaly_rate: 0.01
+
+data_paths:
+  raw: "data/raw"
+  synthetic: "data/synthetic"
+  processed: "data/processed"
+  sample: "data/sample"
+  models: "models/trained"
+  reports: "reports"

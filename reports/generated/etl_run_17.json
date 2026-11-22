@@ -1,0 +1,16 @@
+{
+  "run_id": 17,
+  "status": "SUCCESS",
+  "source_rows": 242809,
+  "accepted_rows": 242809,
+  "rejected_rows": 0,
+  "inserted_facts": {
+    "FactSales": 0,
+    "FactInventorySnapshot": 0,
+    "FactShipment": 0
+  },
+  "updated_source_dimensions": 0,
+  "net_sales_reconciled": "15098779.5700",
+  "source_system": "SYNTHETIC_CANONICAL",
+  "synthetic_anomaly_labels": 1607
+}

@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "checks": {
+    "sales_duplicate_grain": {
+      "value": "0",
+      "passed": true
+    },
+    "shipment_duplicate_grain": {
+      "value": "0",
+      "passed": true
+    },
+    "inventory_duplicate_grain": {
+      "value": "0",
+      "passed": true
+    },
+    "sales_orphans": {
+      "value": "0",
+      "passed": true
+    },
+    "sales_formula_errors": {
+      "value": "0",
+      "passed": true
+    },
+    "product_multiple_current": {
+      "value": "0",
+      "passed": true
+    },
+    "product_temporal_join_errors": {
+      "value": "0",
+      "passed": true
+    },
+    "product_overlapping_intervals": {
+      "value": "0",
+      "passed": true
+    },
+    "date_gaps": {
+      "value": "0",
+      "passed": true
+    },
+    "negative_inventory": {
+      "value": "0",
+      "passed": true
+    },
+    "disabled_or_untrusted_constraints": {
+      "value": "0",
+      "passed": true
+    },
+    "incorrect_synthetic_tag": {
+      "value": "0",
+      "passed": true
+    },
+    "raw_sales_count_mismatch": {
+      "value": "0",
+      "passed": true
+    },
+    "raw_sales_total_mismatch": {
+      "value": "0.0000",
+      "passed": true
+    },
+    "incomplete_audit_runs": {
+      "value": "0",
+      "passed": true
+    },
+    "09_olap_examples.sql": {
+      "passed": true,
+      "value": "Executed against SQL Server"
+    },
+    "10_data_quality_checks.sql": {
+      "passed": true,
+      "value": "Executed against SQL Server"
+    },
+    "12_reporting_queries.sql": {
+      "passed": true,
+      "value": "Executed against SQL Server"
+    }
+  },
+  "warehouse_rows": {
+    "DimDate": 5479,
+    "DimProduct": 150,
+    "DimStore": 10,
+    "DimCustomer": 500,
+    "DimChannel": 5,
+    "DimPromotion": 49,
+    "DimSupplier": 20,
+    "FactSales": 182176,
+    "FactInventorySnapshot": 18000,
+    "FactShipment": 4800
+  },
+  "reporting_views": 11,
+  "etl_procedures": 10
+}

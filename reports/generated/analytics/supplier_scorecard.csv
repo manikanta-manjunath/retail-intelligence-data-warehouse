@@ -1,0 +1,21 @@
+SupplierKey,SourceSupplierID,SupplierName,SupplierCategory,Region,TotalShipments,AverageLeadTimeDays,AverageDaysDelayed,OnTimeDeliveryRatePercent,FullOrderFillRatePercent,TotalQuantityOrdered,TotalQuantityReceived
+15,SUPP-015,Pinnacle Supply Partner 15,Home & Kitchen,West,235,7.263829,0.476595,85.11,89.79,51882,50765
+9,SUPP-009,Pinnacle Supply Partner 9,Home & Kitchen,South,262,7.354961,0.412213,85.5,94.27,58413,57860
+3,SUPP-003,Pinnacle Supply Partner 3,Home & Kitchen,West,225,7.777777,0.422222,87.56,92.89,49371,48692
+12,SUPP-012,Pinnacle Supply Partner 12,Grocery,Midwest,224,7.446428,0.397321,87.95,92.86,49560,48742
+6,SUPP-006,Pinnacle Supply Partner 6,Grocery,Northeast,247,7.408906,0.51417,83.4,92.31,55994,55232
+7,SUPP-007,Pinnacle Supply Partner 7,Electronics,West,282,7.347517,0.358156,88.3,91.13,65513,64634
+1,SUPP-001,Pinnacle Supply Partner 1,Electronics,South,267,7.355805,0.505617,84.27,89.51,62314,61424
+18,SUPP-018,Pinnacle Supply Partner 18,Grocery,Northeast,210,7.261904,0.45238,86.19,90.95,44440,43747
+10,SUPP-010,Pinnacle Supply Partner 10,Health & Beauty,Northeast,234,7.615384,0.525641,82.48,90.17,54224,53142
+4,SUPP-004,Pinnacle Supply Partner 4,Health & Beauty,Midwest,269,7.494423,0.438661,85.13,92.19,59312,58372
+19,SUPP-019,Pinnacle Supply Partner 19,Electronics,West,232,7.581896,0.521551,82.76,96.12,52014,51565
+13,SUPP-013,Pinnacle Supply Partner 13,Electronics,South,190,7.710526,0.347368,87.37,92.63,43057,42478
+5,SUPP-005,Pinnacle Supply Partner 5,General Merchandise,South,245,7.620408,0.530612,82.45,91.84,53824,53079
+16,SUPP-016,Pinnacle Supply Partner 16,Health & Beauty,Midwest,242,7.11157,0.326446,88.43,92.56,55079,54526
+2,SUPP-002,Pinnacle Supply Partner 2,Apparel,Northeast,255,7.588235,0.466666,85.1,92.55,56468,55909
+17,SUPP-017,Pinnacle Supply Partner 17,General Merchandise,South,232,7.862068,0.474137,83.62,93.97,55766,55307
+11,SUPP-011,Pinnacle Supply Partner 11,General Merchandise,West,222,7.513513,0.378378,86.04,92.34,46958,46322
+20,SUPP-020,Pinnacle Supply Partner 20,Apparel,Midwest,262,7.396946,0.480916,83.59,93.89,59245,58680
+14,SUPP-014,Pinnacle Supply Partner 14,Apparel,Northeast,218,7.284403,0.550458,82.11,93.12,52030,51520
+8,SUPP-008,Pinnacle Supply Partner 8,Apparel,Midwest,247,7.315789,0.299595,87.85,94.33,56507,55815

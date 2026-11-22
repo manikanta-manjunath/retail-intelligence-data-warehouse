@@ -1,0 +1,50 @@
+association_rules:
+  min_support: 0.002
+  min_confidence: 0.15
+  min_lift: 1.1
+  metric: "lift"
+  max_len: 3
+
+forecasting:
+  target_level: "weekly"
+  forecast_horizon_weeks: 12
+  test_size_weeks: 12
+  backtest_folds: 5
+  minimum_train_weeks: 104
+  lags: [1, 2, 4, 8, 12]
+  rolling_windows: [4, 8, 12]
+  models:
+    - "naive"
+    - "moving_average"
+    - "exponential_smoothing"
+    - "random_forest"
+    - "gradient_boosting"
+  random_state: 42
+
+segmentation:
+  rfm_features: ["Recency", "Frequency", "Monetary"]
+  n_clusters: 4
+  k_range: [2, 8]
+  random_state: 42
+
+inventory:
+  service_level_z: 1.645 # 95% service level
+  lead_time_days_default: 7
+  abc_thresholds:
+    A: 0.70
+    B: 0.90
+    C: 1.00
+  xyz_thresholds:
+    X: 0.10 # CV <= 0.10
+    Y: 0.25 # 0.10 < CV <= 0.25
+    Z: 1.00 # CV > 0.25
+
+anomaly_detection:
+  contamination: 0.015
+  chronological_train_fraction: 0.80
+  random_state: 42
+  features: ["QuantitySold", "UnitPrice", "NetSalesAmount", "DiscountAmount"]
+
+promotion:
+  baseline_days_before: 14
+  baseline_days_after: 14
