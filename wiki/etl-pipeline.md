@@ -53,4 +53,3 @@ Historical run 16 accepted 242,809 records and inserted 160,057 sales, 9,000 inv
 - [Pipeline](../src/etl/pipeline.py)
 - [ETL procedures](../sql/06_create_etl_procedures.sql)
 - [Verification](../src/etl/verify.py)
-

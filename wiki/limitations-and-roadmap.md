@@ -47,4 +47,3 @@ tags: [limitations, roadmap, future-work]
 Keep synthetic, UCI and Kaggle sources visibly separated. Extend the model only when the source actually provides the business grain; never invent customers, baskets, inventory or supplier events to make an incompatible dataset fit.
 
 See [Public datasets](public-data.md), [Analytics](analytics.md) and [Operations](operations.md).
-

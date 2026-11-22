@@ -67,4 +67,3 @@ Generation refuses to overwrite existing CSV directories. Choose a new output di
 - [CLI](../src/cli.py)
 - [Database executor](../src/db/executor.py)
 - [Dashboard runner](../run_dashboard.sh)
-

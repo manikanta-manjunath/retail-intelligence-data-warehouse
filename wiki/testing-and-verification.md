@@ -71,4 +71,3 @@ It also executes OLAP, data-quality and advanced reporting SQL to ensure the ana
 - [Verifier](../src/etl/verify.py)
 - [Machine-readable verification](../reports/generated/warehouse_verification.json)
 - [Human-readable verification report](../docs/VERIFICATION_REPORT.md)
-

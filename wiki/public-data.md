@@ -56,4 +56,3 @@ UCI usage must credit Daqing Chen, the UCI Machine Learning Repository and the r
 - [Public adapters](../src/ingestion/adapters.py)
 - [Adapter tests](../tests/test_public_adapters.py)
 - [Licenses and source matrix](../LICENSES_AND_DATA_SOURCES.md)
-

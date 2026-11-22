@@ -51,4 +51,3 @@ Check for broken relative links, pages absent from the index, stale counts, unsu
 - Prefer standard relative Markdown links so the wiki works in GitHub and Obsidian.
 - Use one page per durable concept; avoid one page per source file.
 - Do not copy secrets, `.env` values, raw customer-like records or proprietary content into the wiki.
-

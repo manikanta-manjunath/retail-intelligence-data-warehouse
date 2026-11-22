@@ -28,4 +28,3 @@ tags: [sources, provenance, evidence]
 - [Walmart Recruiting — Store Sales Forecasting](https://www.kaggle.com/competitions/walmart-recruiting-store-sales-forecasting/data): weekly store-department data governed by Kaggle competition rules.
 
 See [Public datasets](public-data.md) for compatibility and commands.
-

@@ -67,4 +67,3 @@ The problem report identifies sales spikes/drops, year-over-year decline, low/ne
 - [Problem detection](../src/analytics/problems.py)
 - [Analytics orchestration](../src/analytics/run.py)
 - [Analytics report](../reports/generated/analytics/analytics_report.json)
-

@@ -36,4 +36,3 @@ The machine-readable evidence is in [warehouse verification](../reports/generate
 ## Navigation
 
 Continue with [Architecture](architecture.md), [ETL pipeline](etl-pipeline.md), [Analytics](analytics.md) or [Operations](operations.md).
-

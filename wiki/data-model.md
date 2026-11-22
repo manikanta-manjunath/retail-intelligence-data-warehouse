@@ -49,4 +49,3 @@ Eleven `dw` and `mart` views provide flattened sales detail, inventory position,
 - [Reliability migration](../sql/14_etl_reliability.sql)
 - [Reporting views](../sql/07_create_warehouse_views.sql)
 - [Analytical marts](../sql/08_create_data_marts.sql)
-

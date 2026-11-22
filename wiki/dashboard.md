@@ -49,4 +49,3 @@ Open [http://localhost:8501](http://localhost:8501).
 
 - [Dashboard implementation](../dashboard/app.py)
 - [Dashboard tests](../tests/test_dashboard.py)
-

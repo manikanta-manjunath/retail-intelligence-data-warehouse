@@ -37,4 +37,3 @@ This wiki is the persistent, interlinked documentation layer for the Retail Inte
 - [Architecture reference](../docs/ARCHITECTURE.md)
 - [Verification report](../docs/VERIFICATION_REPORT.md)
 - [Licenses and data sources](../LICENSES_AND_DATA_SOURCES.md)
-

@@ -69,4 +69,3 @@ For detailed grains and keys, see [Warehouse data model](data-model.md). For tra
 - [SQL setup order](../src/db/executor.py)
 - [ETL implementation](../src/etl/pipeline.py)
 - [Canonical architecture document](../docs/ARCHITECTURE.md)
-
