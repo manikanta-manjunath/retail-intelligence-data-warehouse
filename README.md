@@ -19,6 +19,8 @@ The project was executed against SQL Server 2022 CU27 on 22 November 2026:
 
 See [the verification report](docs/VERIFICATION_REPORT.md) for actual metrics and limits.
 
+For topic-oriented, interlinked documentation, start with the [project wiki](wiki/index.md). It includes architecture, warehouse design, ETL, analytics, dashboard behavior, public datasets, operations, verification and roadmap pages.
+
 ## Architecture
 
 The system uses five SQL schemas:
