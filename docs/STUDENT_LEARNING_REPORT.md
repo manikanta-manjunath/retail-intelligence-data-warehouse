@@ -106,6 +106,10 @@ The verified snapshot covers 1 January 2010 through 31 December 2024. It contain
 
 The analytical layer includes rolling-origin weekly forecasting, FP-Growth market-basket analysis, RFM K-means clustering, chronological Isolation Forest evaluation, inventory ABC/XYZ analysis, promotion comparison, supplier scorecards and business-problem detection. Exponential smoothing achieved a mean backtest WAPE of 12.96% and unseen-test WAPE of 15.26%. Anomaly evaluation achieved 12.48% precision and 62.24% recall against authenticated synthetic high-quantity labels. The project produced 6,239 review records and passed 25 automated tests. These results demonstrate an integrated learning platform, not production Walmart performance.
 
+### Major contribution of the case study
+
+The project’s main contribution is not any single algorithm. It is the controlled connection between source evidence, warehouse state, analytical output and user-facing interpretation. A manifest identifies the input, an ETL run records processing, reconciliation confirms warehouse totals, a warehouse signature identifies the analytical snapshot, and generated reports preserve model results. This chain allows a reviewer to move from a KPI or model metric back to the responsible code and data-quality evidence. For student learning, this is more valuable than presenting disconnected notebooks because it demonstrates how mining methods operate inside a maintainable information system.
+
 <div class="page-break"></div>
 
 ## Page 5 of 30 — Table of Contents
@@ -207,6 +211,14 @@ The project is important from a learning perspective because it connects several
 
 The case study therefore treats retail intelligence as an end-to-end engineering and learning problem. The final platform demonstrates data generation, source authentication, preprocessing, dimensional modelling, ETL, verification, forecasting, mining, anomaly review, interactive visualisation and documentation within one reviewable repository.
 
+### Why fifteen-year coverage matters
+
+Long coverage makes several analytical behaviors visible. It provides enough complete weeks for rolling-origin forecasting, enables year-over-year comparisons and exposes the importance of historical product versions. It also creates a realistic performance challenge: calculations must filter and aggregate thousands of days and hundreds of thousands of lines without losing traceability. At the same time, the report avoids confusing duration with realism. Fifteen generated years provide temporal depth for testing, but they do not automatically reproduce every structural change, economic shock or customer behavior observed in a real market.
+
+### Analytical versus operational processing
+
+An operational system would normally optimise the entry and update of individual orders, stock movements or deliveries. This project’s warehouse optimises historical reading and aggregation. Source identifiers are retained for lineage, but surrogate keys and conformed dimensions organise analysis. Measures are stored at atomic grain and summarised through views. This separation explains why a data warehouse complements rather than simply copies an operational database.
+
 <div class="page-break"></div>
 
 ## Page 8 of 30 — Problem Statement, Objectives and Scope
@@ -234,6 +246,21 @@ The project problem is therefore to design a reliable educational platform that 
 The implemented scope includes seven dimensions, three atomic facts, eleven warehouse or mart views, ten ETL or audit procedures, Python analytics, generated model artifacts and a seven-tab dashboard. Verification covers counts, arithmetic, referential integrity, temporal product joins, date continuity, repeatability and analytical chronology.
 
 The scope does not include production authentication, role-based security, orchestration, a complete returns process, an inventory-movement ledger, a purchase-order lifecycle or deployment as a commercial service. Public-source integration is adapter-based and source-specific; it is not claimed as a completed conformed load.
+
+### Success criteria
+
+| Criterion | Acceptance evidence |
+| --- | --- |
+| Continuous history | Sales minimum and maximum dates equal 2010-01-01 and 2024-12-31 |
+| Correct atomic grains | Verification finds zero duplicate sales, inventory or shipment business keys |
+| Reconciled measures | Accepted sales count and amount match warehouse facts |
+| Historical accuracy | Product-version intervals do not overlap and temporal fact joins are valid |
+| Safe replay | An identical historical batch inserts zero duplicate facts |
+| Valid evaluation | Forecast folds and anomaly splits preserve chronological order |
+| Usable presentation | All seven dashboard tabs execute without exceptions |
+| Reproducibility | Commands, tests, machine-readable reports and documentation are present |
+
+These criteria convert broad objectives into observable conditions. A visually attractive dashboard would not satisfy the project if reconciliation failed, and a strong forecast score would not satisfy it if future records leaked into training.
 
 <div class="page-break"></div>
 
@@ -267,6 +294,19 @@ The self-learning and teamwork activity was designed to achieve the following ou
 
 The activity also developed skills beyond algorithm execution. Requirements had to be translated into auditable implementation choices. Team members had to review the difference between a generated result and a defensible claim. Documentation had to remain consistent with code and machine-readable reports. These practices reflect professional responsibility because they reduce the risk of misleading stakeholders with unverified numbers.
 
+### Assessment evidence by learning type
+
+| Learning type | Evidence produced |
+| --- | --- |
+| Conceptual understanding | Architecture explanations, dimensional grains and metric definitions |
+| Practical implementation | SQL scripts, Python modules, configuration and dashboard code |
+| Analytical reasoning | Model comparison, limitation statements and stakeholder interpretation |
+| Verification skill | Test suite, reconciliation, temporal checks and repeat-load evidence |
+| Communication skill | README links, wiki pages, six-slide presentation and this report |
+| Team skill | Shared review, documented decisions and Git-based change history |
+
+This mapping ensures that learning is assessed through both explanation and working evidence. It also prevents the report from becoming a list of tools without demonstrating why each tool was used.
+
 <div class="page-break"></div>
 
 ## Page 10 of 30 — Retail Domain and Stakeholder Study
@@ -294,6 +334,16 @@ The warehouse and analytics layer were designed to answer questions at multiple 
 
 The stakeholder study influenced design choices. Date, product, store, channel, promotion, customer and supplier dimensions are conformed because several processes need them. Sales remains at line grain so baskets, discount behavior and anomalies are not lost. Inventory and shipment facts remain separate because their event frequencies and measures differ.
 
+### Grain examples
+
+Suppose transaction `TX-100` contains milk, bread and soap. The sales fact stores three rows because price, quantity, cost and discount belong to each product line. The transaction count, however, remains one when calculated using the distinct transaction identifier. If those lines were pre-aggregated to one transaction row, market-basket membership and product-level margin would be lost.
+
+For inventory, one row represents the condition of a product at one store on one date. Loading several intraday movements directly into this snapshot fact would violate its grain. Those movements would require a separate stock-movement fact. Similarly, a shipment row represents a supplier delivery event; splitting it by unrelated sales lines would multiply ordered and received quantities. These examples show why grain is a business contract, not merely a database implementation detail.
+
+### Decision cadence
+
+Executive trends may be reviewed monthly or quarterly, while stockout and delivery problems may require daily attention. Forecasting operates weekly in this implementation because weekly aggregation reduces daily noise and matches the available history. The dashboard therefore combines different decision cadences without pretending that every metric should be refreshed or acted upon at the same frequency.
+
 <div class="page-break"></div>
 
 ## Page 11 of 30 — Data-Warehousing and Mining Foundations
@@ -315,6 +365,21 @@ Anomaly detection identifies records that differ from learned patterns. Precisio
 Time-series forecasting requires order-aware evaluation. Random train/test splitting would allow future patterns to influence earlier predictions. Rolling-origin backtesting instead trains on the past and evaluates later, non-overlapping periods. The final test period remains unseen until model selection is complete.
 
 Together, these foundations shaped the platform: dimensional quality precedes analytics, each method receives task-appropriate features and metrics, and every interpretation includes its data limitations.
+
+### OLTP and warehouse comparison
+
+| Property | Operational processing | Analytical warehouse in this project |
+| --- | --- | --- |
+| Main purpose | Record current business events | Analyse integrated historical behavior |
+| Typical query | Read or update one order | Aggregate many years by several dimensions |
+| Data organisation | Process-oriented tables | Conformed dimensions and fact tables |
+| History | Often current-state focused | Explicit calendar and product history |
+| Write pattern | Frequent small transactions | Controlled batch loading |
+| Quality emphasis | Valid individual transaction | Reconciliation, lineage and cross-source consistency |
+
+### Relationship between methods
+
+The mining methods answer different questions and should not be compared as if they compete for one accuracy score. Forecasting estimates future weekly totals. Association mining describes co-occurrence. Clustering creates descriptive customer groups. Isolation Forest prioritises unusual lines. Rule-based detection identifies explainable operational conditions. Combining them creates broader decision support, while keeping their outputs and evaluation criteria separate protects interpretation.
 
 <div class="page-break"></div>
 
@@ -348,6 +413,21 @@ The Streamlit dashboard integrated filtered KPIs and analytical outputs. Automat
 
 This phased method supports reproducibility. If an analytical result appears incorrect, the investigation can move backward from artifact to warehouse snapshot, ETL run, staged records, immutable archive and authenticated source manifest.
 
+### Project risks and controls
+
+| Risk | Control used in the project |
+| --- | --- |
+| Source file changed after generation | SHA-256 hashes checked before parsing |
+| Invalid line contaminates a basket | Dependent basket records quarantined consistently |
+| Duplicate facts on replay | Unique grains and idempotent procedures |
+| Partial load appears successful | One warehouse transaction and explicit run status |
+| Historical facts use current product attributes | SCD Type 2 temporal resolution |
+| Forecast leakage | Rolling-origin folds and an untouched test period |
+| Anomaly metric overclaim | Authenticated narrow labels and explicit limitations |
+| Dashboard hides missing data | Empty-state handling plus separate verification evidence |
+
+The work plan used these risks as review checkpoints. A phase was not considered complete merely because it ran once; it needed evidence that predictable failure modes were controlled.
+
 <div class="page-break"></div>
 
 ## Page 13 of 30 — Data Sources, Provenance and Licensing
@@ -374,6 +454,16 @@ Calling the dataset synthetic is important. It enables reproducible testing and 
 The project adapters preserve native grains and write source-specific processed outputs. They do not silently force incompatible records into the canonical star schema. This separation protects provenance and prevents an impressive-looking but false integrated dataset.
 
 See [Public dataset documentation](../wiki/public-data.md) and [licenses and source matrix](../LICENSES_AND_DATA_SOURCES.md).
+
+### Canonical source contract
+
+The generated input separates entities and events into files for dates, products, stores, customers, channels, promotions, suppliers, sales lines, inventory snapshots and shipments. This separation makes file-level counts and hashes meaningful. Dimension files describe relatively stable entities, while fact files describe events or periodic positions.
+
+The manifest acts as a contract rather than a simple file list. Before any parsing, the loader checks whether the declared source system is accepted, whether every expected file exists, whether recorded and calculated hashes match and whether file row counts agree with the declaration. A directory that fails authentication is rejected before warehouse mutation. This design prevents a modified or incomplete file set from being treated as the original reproducible dataset.
+
+### Provenance levels
+
+Provenance is preserved at four levels: dataset-level declarations in the manifest, file-level SHA-256 hashes, row-level immutable JSON archives and run-level audit identifiers. Public adapters additionally preserve source-specific identity instead of renaming incompatible records until their origins become unclear.
 
 <div class="page-break"></div>
 
@@ -402,11 +492,72 @@ The generator includes repeatable seasonal, product, customer and operational be
 
 These controls are useful for testing but reduce external validity. Embedded associations are demonstration evidence, and injected anomalies represent only one anomaly class. The report therefore treats the generator as a laboratory environment for learning pipeline behavior, not as a simulation proven to match a real retailer.
 
+### Generator consistency rules
+
+Generated sales lines satisfy explicit arithmetic: quantity and unit price determine gross sales, discount reduces gross sales to net sales, and cost is used to calculate profit. Foreign business keys are selected from generated dimension domains. Inventory quantities, reorder points and order quantities remain non-negative. Shipment received quantities and timing fields are generated so fill and delay indicators can be recalculated independently.
+
+Historical prefixes are applied consistently across related business keys. This matters because prefixing only a fact key or only a dimension key would create orphaned references. The tests also execute generation under different Python hash seeds to ensure output does not depend on unordered in-memory iteration.
+
+### Ground-truth separation
+
+Injected anomaly labels are stored in a dedicated ground-truth file rather than embedded as a training feature. Its count and hash appear in the manifest. During ETL, every labelled transaction-line key must resolve to an actual accepted sales record. The audit schema then stores the authenticated label independently of the feature table, making accidental target leakage easier to detect.
+
 <div class="page-break"></div>
 
 ## Page 15 of 30 — Data Preprocessing and Validation
 
 Preprocessing begins before warehouse loading. The validator converts source text into typed values and applies business rules consistently. This design prevents invalid strings, out-of-range measures and broken references from reaching SQL procedures as if they were trustworthy records.
+
+### Data-preprocessing workflow graph
+
+```mermaid
+flowchart LR
+    A[Manifest and source CSV files] --> B{Hash and row-count checks}
+    B -->|Fail| R1[Reject source batch]
+    B -->|Pass| C[Parse dates numbers and identifiers]
+    C --> D{Type and range rules}
+    D -->|Invalid| R2[Record rejection reason]
+    D -->|Valid| E{Reference and duplicate checks}
+    E -->|Invalid| R3[Quarantine row or dependent basket]
+    E -->|Valid| F[Create typed accepted record]
+    F --> G[Archive original JSON and record hash]
+    G --> H[Load run-scoped staging tables]
+    H --> I[Derive warehouse measures and dimension keys]
+    I --> J[Reconcile counts keys and amounts]
+```
+
+### Example source data before preprocessing
+
+The following values are taken from the authenticated historical source files. Blank customer and promotion values are preserved as missing values rather than replaced with invented identities.
+
+| Transaction | Store | Customer | Date | Time | Channel | Declared total |
+| --- | --- | --- | --- | --- | --- | ---: |
+| HIST-TX-0000001 | STORE-002 | CUST-0419 | 2020-05-19 | 11:52:00 | In-Store | 361.97 |
+| HIST-TX-0000002 | STORE-007 | missing | 2014-07-03 | 10:24:00 | In-Store | 109.20 |
+
+| Transaction | Line | Product | Quantity | Unit price | Discount | Source line total | Promotion |
+| --- | ---: | --- | ---: | ---: | ---: | ---: | --- |
+| HIST-TX-0000001 | 1 | PROD-018 | 1 | 9.48 | 0.00 | 9.48 | missing |
+| HIST-TX-0000002 | 1 | PROD-042 | 1 | 116.57 | 17.49 | 99.08 | HIST-PROMO-2014-SUMMER |
+| HIST-TX-0000002 | 2 | PROD-131 | 2 | 5.95 | 1.78 | 10.12 | HIST-PROMO-2014-SUMMER |
+
+### Example after typing and derivation
+
+| Transaction line | Parsed timestamp | Gross sales | Discount amount | Net sales | Validation result |
+| --- | --- | ---: | ---: | ---: | --- |
+| HIST-TX-0000001 / 1 | 2020-05-19 11:52:00 | 9.48 | 0.00 | 9.48 | Accepted |
+| HIST-TX-0000002 / 1 | 2014-07-03 10:24:00 | 116.57 | 17.49 | 99.08 | Accepted |
+| HIST-TX-0000002 / 2 | 2014-07-03 10:24:00 | 11.90 | 1.78 | 10.12 | Accepted |
+
+For HIST-TX-0000002, the two accepted line totals reconcile to 109.20, matching the transaction header. The missing customer remains anonymous; the pipeline does not manufacture a customer key. Promotion membership is retained because the source provides a valid promotion identifier.
+
+### Inventory preprocessing example
+
+| Snapshot date | Store | Product | On hand | On order | Reorder point | Derived interpretation |
+| --- | --- | --- | ---: | ---: | ---: | --- |
+| 2022-11-02 | STORE-001 | PROD-001 | 57 | 0 | 26 | Healthy position |
+| 2022-11-02 | STORE-001 | PROD-002 | 0 | 26 | 40 | Stockout and below reorder point |
+| 2022-11-02 | STORE-001 | PROD-005 | 15 | 44 | 34 | Understock with replenishment on order |
 
 ### Validation dimensions
 
@@ -427,6 +578,23 @@ Rejected rows are not silently discarded. They are written to `audit.RejectedRec
 Forecasting completes daily observations against the date calendar, zero-fills missing sales days where appropriate and aggregates full Monday-based weeks. RFM features are log-transformed and standardised before K-means so large monetary values do not dominate distance. Basket analysis reduces each transaction to distinct product membership. Anomaly analysis selects quantity, unit price, net sales and discount features, performs a chronological split and excludes authenticated positives from training.
 
 The preprocessing strategy shows that cleaning is task-dependent. Warehouse validation protects business correctness, while analytical transformations prepare features without changing the historical meaning of source events.
+
+### Before-and-after preprocessing view
+
+| Input condition | Processing action | Resulting evidence |
+| --- | --- | --- |
+| Text values representing dates and numbers | Strict parsing with validation errors | Typed staged columns or a rejected-row reason |
+| Unknown product or store reference | Reference check fails | Record quarantined instead of creating an orphan |
+| Duplicate immutable event key | Duplicate/conflict comparison | Safe no-op for identical data or failure for conflict |
+| Invalid sales line in a transaction | Basket dependency handling | Related basket evidence remains internally consistent |
+| Missing calendar dates in sales activity | Calendar completion for modelling | Continuous daily series before weekly aggregation |
+| Highly skewed RFM values | Log transform and standardisation | Features suitable for distance-based clustering |
+
+### Validation ordering
+
+Authentication occurs before expensive parsing; parsing occurs before reference checks; accepted records are identified before database loading. This order improves clarity because a hash failure is reported as an input-authentication issue rather than appearing later as unexplained row errors. It also reduces unnecessary database work when the source contract is invalid.
+
+Decimal values are handled with controlled numeric semantics during warehouse reconciliation. This avoids using binary floating-point approximations as the final authority for currency totals. Analytical libraries may use floating-point values for modelling, but warehouse sales reconciliation remains based on database-compatible decimal measures.
 
 <div class="page-break"></div>
 
@@ -457,6 +625,66 @@ Warehouse views and analytical marts
             └──► Streamlit decision-support dashboard
 ```
 
+### Complete project graph
+
+```mermaid
+flowchart TB
+    subgraph Sources[Source and generation layer]
+        GEN[Deterministic synthetic generator]
+        PUB[UCI and Kaggle adapters]
+        MAN[Manifest hashes counts and limitations]
+        GEN --> MAN
+        PUB --> MAN
+    end
+
+    subgraph Engineering[Data engineering layer]
+        VAL[Python validation]
+        ARC[Immutable raw archive]
+        STG[Run-scoped staging]
+        ETL[Transactional ETL procedures]
+        AUD[Audit history and quality results]
+        MAN --> VAL
+        VAL --> ARC
+        VAL --> STG
+        STG --> ETL
+        ETL --> AUD
+    end
+
+    subgraph Warehouse[SQL Server warehouse]
+        DIM[Conformed dimensions]
+        FACT[Atomic facts]
+        MART[Warehouse views and marts]
+        ETL --> DIM
+        ETL --> FACT
+        DIM --> MART
+        FACT --> MART
+    end
+
+    subgraph Intelligence[Analytics and presentation]
+        FC[Forecasting]
+        MB[Basket rules]
+        RFM[RFM clustering]
+        AN[Anomaly and problem detection]
+        INV[Inventory promotion supplier analysis]
+        DASH[Streamlit dashboard]
+        MART --> FC
+        MART --> MB
+        MART --> RFM
+        MART --> AN
+        MART --> INV
+        FC --> DASH
+        MB --> DASH
+        RFM --> DASH
+        AN --> DASH
+        INV --> DASH
+        AUD --> DASH
+    end
+
+    TEST[25 automated tests and warehouse verification] --> Engineering
+    TEST --> Warehouse
+    TEST --> Intelligence
+```
+
 ### SQL schemas
 
 | Schema | Responsibility |
@@ -479,6 +707,21 @@ Warehouse views and analytical marts
 
 The architecture separates responsibilities instead of allowing one script to perform every operation. SQL protects warehouse invariants close to the data. Python coordinates file processing and models. Generated artifacts preserve analytical results. Streamlit focuses on interaction and presentation. This separation makes failures easier to isolate and components easier to test.
 
+### Component interaction details
+
+| Component | Reads | Writes | Failure visibility |
+| --- | --- | --- | --- |
+| Generator | Configuration and seed | Canonical files and manifest | Determinism and schema tests |
+| Validator | Manifest and CSV files | Accepted and rejected record sets | Structured validation issues |
+| ETL pipeline | Validated records | Raw, staging, warehouse and audit schemas | Run status and JSON report |
+| Verifier | Warehouse and audit objects | Machine-readable verification report | Named assertion failures |
+| Analytics runner | Verified marts | CSV and JSON analytical artifacts | Model and data limitations |
+| Dashboard | SQL views and artifacts | User-visible filtered views | Empty states and information notices |
+
+### Architectural boundary
+
+The dashboard does not perform warehouse loading, and ETL does not depend on the dashboard. Analytics run only after verification succeeds. This directional dependency reduces circular behavior and supports independent testing. The database can be verified without starting Streamlit, and the dashboard harness can test layout behavior using controlled data access.
+
 <div class="page-break"></div>
 
 ## Page 17 of 30 — Dimensional Model and Slowly Changing Dimensions
@@ -495,6 +738,43 @@ The architecture separates responsibilities instead of allowing one script to pe
 | `DimPromotion` | `PromotionID` | Type 1 overwrite |
 | `DimSupplier` | `SourceSupplierID` | Type 1 overwrite |
 
+### Warehouse star-schema graph
+
+```mermaid
+flowchart TB
+    DATE[DimDate]
+    PRODUCT[DimProduct SCD Type 2]
+    STORE[DimStore]
+    CUSTOMER[DimCustomer]
+    CHANNEL[DimChannel]
+    PROMO[DimPromotion]
+    SUPPLIER[DimSupplier]
+
+    SALES[[FactSales<br/>one transaction product line]]
+    INVENTORY[[FactInventorySnapshot<br/>one product store date]]
+    SHIPMENT[[FactShipment<br/>one shipment]]
+
+    DATE --> SALES
+    PRODUCT --> SALES
+    STORE --> SALES
+    CUSTOMER --> SALES
+    CHANNEL --> SALES
+    PROMO --> SALES
+
+    DATE --> INVENTORY
+    PRODUCT --> INVENTORY
+    STORE --> INVENTORY
+
+    DATE --> SHIPMENT
+    PRODUCT --> SHIPMENT
+    STORE --> SHIPMENT
+    SUPPLIER --> SHIPMENT
+
+    SALES --> MARTS[Reporting and model-ready marts]
+    INVENTORY --> MARTS
+    SHIPMENT --> MARTS
+```
+
 Surrogate keys are used for warehouse joins, while source business keys support lineage. The date dimension contains calendar attributes needed for daily, weekly, monthly, quarterly and yearly analysis. Store, customer, channel, promotion and supplier attributes use current-state strategies suitable for the educational scenario.
 
 ### Product SCD Type 2
@@ -506,6 +786,16 @@ The first observed product version begins at `1900-01-01`, representing an unkno
 Verification checks that product effective intervals do not overlap, only one current version exists and every fact connects to the correct version. An automated SQL integration test introduces an SCD change, verifies the historical behavior and rolls the change back so the shared verification snapshot remains unchanged.
 
 The full definitions are available in [dimension SQL](../sql/03_create_dimensions.sql), [constraints and indexes](../sql/05_create_constraints_indexes.sql) and the [warehouse data-model wiki](../wiki/data-model.md).
+
+### Representative dimension attributes
+
+`DimDate` includes calendar labels and grouping fields required for daily-to-yearly analysis. `DimProduct` carries product identity, hierarchy, brand, price, cost, unit of measure, supplier relationship and effective-version fields. `DimStore` provides store identity, type, location and regional grouping. `DimCustomer` supports customer-level RFM preparation. `DimChannel` separates sales modes. `DimPromotion` describes promotion periods and types. `DimSupplier` provides category and region context for delivery analysis.
+
+### Key-management rationale
+
+Warehouse surrogate keys are stable internal identifiers. Source keys remain necessary because they identify the business record received from a source. Keeping both prevents two common errors: using a mutable source identifier as the only warehouse relationship, and losing the ability to trace an internal key back to source evidence.
+
+Unknown or late-arriving dimension behavior must be designed deliberately in a production system. The educational loader instead validates references and rejects unresolved relationships, prioritising demonstrable integrity over permissive loading. This choice is appropriate for controlled canonical data but would need review for real asynchronous source systems.
 
 <div class="page-break"></div>
 
@@ -536,6 +826,16 @@ Eleven `dw` and `mart` views provide flattened sales detail, inventory positions
 
 The project executes six OLAP operations, data-quality SQL and advanced reporting queries during verification. Foreign keys protect conformed joins, and formula constraints ensure that gross, net and profit values remain arithmetically consistent.
 
+### Measure additivity
+
+Quantity, gross sales, discounts, net sales, cost and profit are additive across compatible sales dimensions. Margin percentage is not stored or summed as if it were additive; it should be recalculated as total profit divided by total net sales for the selected scope. Inventory on hand is semi-additive: it can be summed across products or stores for one snapshot date, but summing daily snapshots across time would overstate physical stock. Shipment lead-time averages also require an appropriate count rather than addition.
+
+### Mart purpose
+
+Marts provide stable analytical interfaces while preserving atomic facts underneath. Executive summaries reduce repeated KPI logic. Product and store views standardise joins. Weekly category views provide forecasting inputs. RFM views produce one row per customer for feature engineering. Inventory-risk views expose current health without requiring dashboard code to reconstruct every business rule.
+
+This layered design allows users to start from a summary and drill down to atomic evidence. It also makes metric changes reviewable in SQL rather than duplicated across several visual components.
+
 <div class="page-break"></div>
 
 ## Page 19 of 30 — ETL Pipeline and Transaction Design
@@ -553,6 +853,51 @@ The ETL workflow consists of ten controlled stages.
 9. **Reconcile:** compare accepted counts, sales amounts and business keys with warehouse facts.
 10. **Commit and report:** save quality results, complete the audit run and write a JSON report.
 
+### ETL process graph
+
+```mermaid
+flowchart TD
+    S[Start ETL request] --> A[Read manifest]
+    A --> B{Source type hashes and counts valid?}
+    B -->|No| F1[Fail before warehouse transaction]
+    B -->|Yes| C[Parse and validate all source rows]
+    C --> D[Create audit run and persist manifest]
+    D --> E[Archive every original row]
+    E --> G[Insert accepted rows into staging]
+    G --> H[Acquire SQL application lock]
+    H --> I[Begin warehouse transaction]
+    I --> J[Synchronise current source state]
+    J --> K[Load dimensions]
+    K --> L[Load sales inventory and shipment facts]
+    L --> M[Load authenticated anomaly labels]
+    M --> N{Reconciliation and quality checks pass?}
+    N -->|No| RB[Rollback warehouse transaction]
+    N -->|Yes| CM[Commit warehouse transaction]
+    RB --> F2[Mark audit run failed and retain archives]
+    CM --> OK[Mark run successful and write JSON report]
+```
+
+### Simplified ETL sequence graph
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant CLI
+    participant Validator
+    participant SQL as SQL Server
+    participant Report as Report Writer
+    User->>CLI: Run ETL with canonical input directory
+    CLI->>Validator: Authenticate and validate files
+    Validator-->>CLI: Accepted rows and rejected rows
+    CLI->>SQL: Start audit run and archive originals
+    CLI->>SQL: Stage accepted rows
+    CLI->>SQL: Execute transactional warehouse load
+    SQL-->>CLI: Counts measures and quality results
+    CLI->>SQL: Complete run status
+    CLI->>Report: Write ETL JSON evidence
+    Report-->>User: Reproducible run summary
+```
+
 ### Transaction behavior
 
 An SQL application lock serialises warehouse writers so two load processes cannot mutate shared state simultaneously. Staging, current-source synchronisation, dimension loading, fact loading, quality results and successful completion are committed as one warehouse transaction. `XACT_ABORT` ensures SQL errors terminate and roll back the transaction.
@@ -562,6 +907,25 @@ If a failure occurs, the run is marked `FAILED` with a bounded error message. Im
 Immutable fact-key conflicts abort instead of silently overwriting history. Identical business keys with different facts may indicate corruption or an uncontrolled source correction and therefore require review. The setup command uses an explicit allowlist of SQL scripts, excluding destructive reset or demonstration scripts from routine execution.
 
 See [ETL pipeline documentation](../wiki/etl-pipeline.md) and [pipeline implementation](../src/etl/pipeline.py).
+
+### Failure-behavior matrix
+
+| Failure condition | Pipeline response |
+| --- | --- |
+| Missing file or incorrect file hash | Stop before parsing and warehouse mutation |
+| Invalid field or unresolved reference | Record rejection with reason and run context |
+| Conflicting immutable business key | Abort warehouse transaction |
+| SQL procedure or constraint error | Roll back staged warehouse publication |
+| Reconciliation mismatch | Mark run unsuccessful and expose quality evidence |
+| Unexpected application exception | Record a bounded failure message and retain archives |
+
+### Current-state synchronisation
+
+Mutable source dimensions may update current descriptive values, while immutable facts require identity and measure consistency. Synchronisation is therefore not a blind replacement operation. The pipeline compares keys and attributes, applies the selected dimension-history policy and refuses to reinterpret an existing immutable event as a different event.
+
+### Transaction boundary reasoning
+
+Archiving input before or outside the main warehouse commit ensures failure evidence remains available. Publishing staging, dimensions, facts, quality results and success status together ensures consumers do not observe a partially completed successful run. The application lock adds writer-level coordination, while database constraints remain the final protection against invalid relational state.
 
 <div class="page-break"></div>
 
@@ -589,6 +953,18 @@ The pipeline prefers explicit failure over silent correction. Conflicting immuta
 
 Machine-readable evidence is available in [ETL run reports](../reports/generated/) and [warehouse verification](../reports/generated/warehouse_verification.json).
 
+### Trace example
+
+A reviewer investigating one sales fact can identify its transaction and line business key, locate the ETL run that introduced it, inspect the staged typed record, read the immutable JSON representation and compare the row hash with the authenticated input file. The same fact can then be followed into a mart, a filtered dashboard KPI or an anomaly artifact. This trace does not depend on memory or an informal explanation; it is represented in persisted keys and reports.
+
+### Reconciliation categories
+
+Count reconciliation confirms completeness, amount reconciliation confirms financial consistency, grain checks detect duplicates, foreign-key checks detect missing dimensions, temporal checks validate historical meaning and constraint checks confirm that SQL protections remain trusted. Passing only one category would be insufficient. For example, source and fact row counts could match while a join assigns facts to the wrong product version; temporal verification catches that separate failure mode.
+
+### Operational significance
+
+Idempotency supports safe reruns after network interruption or operator uncertainty. A pipeline that creates duplicates on replay forces manual cleanup and weakens trust. The verified zero-insert replay shows that retry behavior was considered as part of correctness rather than left as an operational afterthought.
+
 <div class="page-break"></div>
 
 ## Page 21 of 30 — Sales Forecasting Methodology and Results
@@ -600,6 +976,48 @@ Sales are completed against the date calendar, zero-filled where a valid sales d
 ### Candidate models
 
 Five candidates are compared: naive forecast, four-week moving average, exponential smoothing, random forest and gradient boosting. Model selection uses up to five expanding-window rolling-origin folds. Each fold trains only on earlier weeks and evaluates a later non-overlapping period. Recursive predictions do not consume actual fold or test targets.
+
+### Analytics workflow graph
+
+```mermaid
+flowchart LR
+    V[Verified warehouse marts] --> W[Complete daily calendar and aggregate full weeks]
+    W --> SPLIT[Reserve final 12 weeks as unseen test]
+    SPLIT --> FOLDS[Build up to five rolling-origin folds]
+    FOLDS --> N[Naive]
+    FOLDS --> MA[Four-week moving average]
+    FOLDS --> ES[Exponential smoothing]
+    FOLDS --> RF[Random forest]
+    FOLDS --> GB[Gradient boosting]
+    N --> COMP[Compare mean WAPE with MAE tie-break]
+    MA --> COMP
+    ES --> COMP
+    RF --> COMP
+    GB --> COMP
+    COMP --> BEST[Select exponential smoothing]
+    BEST --> TEST[Evaluate once on unseen 12-week test]
+    TEST --> REFIT[Refit using all available history]
+    REFIT --> OUT[Generate 12-week future forecast]
+```
+
+### Wider mining workflow graph
+
+```mermaid
+flowchart TB
+    MART[Verified model-ready marts] --> FORECAST[Weekly forecasting]
+    MART --> BASKET[Transaction baskets and FP-Growth]
+    MART --> CUSTOMER[RFM features and K-means]
+    MART --> ANOMALY[Chronological Isolation Forest]
+    MART --> OPS[Inventory promotion and supplier analysis]
+    FORECAST --> ART[Versioned CSV and JSON artifacts]
+    BASKET --> ART
+    CUSTOMER --> ART
+    ANOMALY --> ART
+    OPS --> ART
+    ART --> PROBLEM[Business-problem detector]
+    ART --> UI[Dashboard presentation]
+    PROBLEM --> UI
+```
 
 The final twelve weeks remain unseen during model selection. After the best candidate is chosen, it is fitted to the available history, evaluated on this held-out test period and refitted to generate the next twelve weekly forecasts.
 
@@ -620,6 +1038,18 @@ WAPE expresses total absolute error relative to total observed volume. MASE belo
 ### Filter-aware dashboard behavior
 
 Dashboard forecasts are rebuilt and cached by selected dates, stores, categories and channels. At least 128 complete weeks are required under the current configuration. Shorter selections show an information notice instead of raising an exception. This behavior turns a technical constraint into a clear user-facing explanation.
+
+### Model-selection detail
+
+The selection rule chooses the lowest mean rolling-origin WAPE, with MAE used as a tie-break and the final test excluded from selection. Five folds estimate stability rather than relying on one favorable cut. The selected exponential-smoothing model achieved mean backtest MAE of approximately 2,334.54, mean RMSE of 2,722.58 and mean MASE of 0.542. Variation across folds is reported instead of hiding instability.
+
+The development period ends on 30 September 2024. The unseen weekly test begins on 7 October 2024 and ends on 23 December 2024. Keeping these dates explicit makes the chronological boundary reviewable.
+
+### Error-metric interpretation
+
+MAE expresses typical absolute error in sales units. RMSE penalises larger misses more strongly. WAPE relates total absolute error to total actual volume and remains interpretable for aggregated sales. MASE compares error with a simple scaling baseline and supports comparison across series. No single measure fully describes operational usefulness, so the report presents several.
+
+Forecasts remain planning inputs rather than guaranteed demand. Promotions, economic conditions, store openings, stockouts and policy changes can alter real demand in ways not represented by the generated history.
 
 <div class="page-break"></div>
 
@@ -648,6 +1078,19 @@ FP-Growth is used because it can identify frequent itemsets without generating e
 Selected product affinities were deliberately embedded in the synthetic generator so that the learning workflow would produce visible rules. The rules therefore demonstrate correct basket preparation, algorithm execution and metric interpretation. They must not be presented as independent discovery about actual customer behavior.
 
 In a real deployment, association rules could support cross-selling, recommendation, shelf layout or bundle exploration. Decisions should also consider margin, stock availability, seasonality and experimental evidence. A strong historical association alone does not prove that promoting one item causes purchases of another.
+
+### Verified rule examples
+
+| Antecedent | Consequent | Support | Confidence | Lift |
+| --- | --- | ---: | ---: | ---: |
+| PROD-005 | PROD-006 | 0.002882 | 0.1848 | 10.0648 |
+| PROD-006 | PROD-005 | 0.002882 | 0.1570 | 10.0648 |
+| PROD-009 | PROD-010 | 0.002868 | 0.1781 | 9.3547 |
+| PROD-018 | PROD-019 | 0.002513 | 0.1538 | 8.2336 |
+
+The reverse direction has the same support and lift because the same pair is counted, but confidence differs because the frequency of the antecedent differs. This is an important interpretation lesson: `A → B` and `B → A` are not interchangeable recommendations.
+
+At 0.2882% support, the PROD-005/PROD-006 pair appears in a small fraction of all 73,213 baskets. Its high lift indicates strong relative association, while low absolute support warns that the operational impact may still be limited. Both relative and absolute importance should therefore be considered.
 
 <div class="page-break"></div>
 
@@ -679,6 +1122,21 @@ In a real retail context, recent and high-value customers could receive retentio
 
 The generated identifiers contain no claim about real people. Segment outputs are available in [customer segments](../reports/generated/analytics/customer_segments.csv) and [cluster profiles](../reports/generated/analytics/customer_segment_profiles.csv).
 
+### Verified cluster profiles
+
+| Cluster | Customers | Mean recency days | Mean frequency | Mean monetary value |
+| ---: | ---: | ---: | ---: | ---: |
+| 0 | 82 | 6.79 | 108.44 | 25,052.33 |
+| 1 | 194 | 77.56 | 107.90 | 25,059.25 |
+| 2 | 137 | 50.61 | 121.60 | 29,418.56 |
+| 3 | 87 | 52.64 | 97.14 | 20,853.13 |
+
+Cluster 0 is distinguished by very recent activity. Cluster 1 has similar average frequency and value but much older recency. Cluster 2 has the highest average frequency and monetary value. Cluster 3 has the lowest average frequency and monetary value among the four profiles. These labels are interpretive summaries, not permanent customer identities.
+
+### Sensitivity and governance
+
+K-means depends on the chosen number of clusters, scaling and random initialisation. A production study should compare several values of `k`, examine stability across seeds and periods and review whether the segments are actionable. Customer profiling should also follow consent, retention and access policies. The educational dataset avoids personal data, but the governance lesson remains important.
+
 <div class="page-break"></div>
 
 ## Page 24 of 30 — Anomaly Evaluation and Problem Detection
@@ -709,6 +1167,23 @@ An anomaly is a request for investigation, not a conclusion. A high quantity may
 
 See [anomaly output](../reports/generated/analytics/sales_anomalies.csv) and [detected problems](../reports/generated/analytics/detected_problems.csv).
 
+### Confusion matrix
+
+| Evaluation outcome | Count |
+| --- | ---: |
+| True positives | 89 |
+| False positives | 624 |
+| False negatives | 54 |
+| True negatives | 35,474 |
+
+The 89 true positives divided by 713 flags produce 12.48% precision. The same 89 true positives divided by 143 labelled positives produce 62.24% recall. This calculation makes the metric trade-off transparent. A lower threshold could identify more positives but create more review work; a higher threshold could improve precision while missing more positives.
+
+### Problem prioritisation
+
+The 6,239 problem records should be prioritised by business impact, confidence and urgency. A stockout on a high-value stable product may require immediate replenishment review. A year-over-year decline requires broader context. A large legitimate order flagged as anomalous may be closed after verification. Recording review outcomes would enable future threshold tuning and distinguish useful flags from recurring noise.
+
+The project intentionally keeps statistical anomalies and deterministic business rules visible as different evidence types. One identifies unusual patterns; the other identifies known conditions with direct explanations.
+
 <div class="page-break"></div>
 
 ## Page 25 of 30 — Inventory, Promotion and Supplier Analytics
@@ -733,11 +1208,48 @@ These analyses are descriptive and operational. They make warehouse measures acc
 
 Outputs are available in [inventory ABC/XYZ](../reports/generated/analytics/inventory_abc_xyz.csv), [promotion analysis](../reports/generated/analytics/promotion_analysis.csv) and [supplier scorecard](../reports/generated/analytics/supplier_scorecard.csv).
 
+### Detailed inventory interpretation
+
+ABC class is based on cumulative revenue contribution, while XYZ class is based on demand variability measured through coefficient of variation. An `AZ` item would be financially important but highly variable and may require careful safety-stock planning. A `CZ` item contributes less value and has unstable demand, so the cost of complex control may exceed its benefit. The current output includes explicit health values such as `HEALTHY` and `REORDER_NOW`, allowing planners to connect strategic class with immediate stock position.
+
+### Supplier example
+
+The scorecard shows measurable variation rather than one generic supplier status. For example, SUPP-015 has 235 shipments, average lead time of approximately 7.26 days, 85.11% on-time delivery and 89.79% full-order fill. SUPP-009 has 262 shipments, approximately 7.35-day lead time, 85.50% on-time delivery and 94.27% full fill. A sourcing decision should consider both timeliness and completeness rather than ranking on only one percentage.
+
+### Cross-analysis opportunities
+
+Future work could combine ABC/XYZ class, current stock risk, forecast uncertainty and supplier reliability into a replenishment-priority view. The current project keeps these analyses separate to avoid claiming an optimisation model that has not been implemented.
+
 <div class="page-break"></div>
 
 ## Page 26 of 30 — Streamlit Dashboard and Decision Support
 
 The Streamlit application presents warehouse and analytical evidence through seven interactive tabs. Global filters include sales date range, store, product category and channel. Executive, product and store calculations operate on the filtered sales frame, and forecasting is rebuilt for the selected scope when sufficient history exists.
+
+### Dashboard interaction graph
+
+```mermaid
+flowchart LR
+    USER[User selections] --> DATE[Date range]
+    USER --> STORE[Stores]
+    USER --> CAT[Categories]
+    USER --> CHANNEL[Channels]
+    DATE --> FILTER[Filtered sales scope]
+    STORE --> FILTER
+    CAT --> FILTER
+    CHANNEL --> FILTER
+    FILTER --> KPI[Executive KPIs]
+    FILTER --> PS[Product and store performance]
+    FILTER --> FH{At least 128 complete weeks?}
+    FH -->|Yes| DYN[Recalculate and cache forecast]
+    FH -->|No| INFO[Show minimum-history information notice]
+    KPI --> TABS[Seven dashboard tabs]
+    PS --> TABS
+    DYN --> TABS
+    INFO --> TABS
+    ART[Analytics artifacts] --> TABS
+    AUDIT[ETL audit views] --> TABS
+```
 
 ### Dashboard tabs
 
@@ -759,6 +1271,18 @@ Database and artifact read functions return well-formed empty data frames when a
 
 The dashboard distinguishes descriptive KPIs, forecast estimates, cluster profiles and review flags. This separation reduces the risk that users interpret every visual as a confirmed business fact. The complete implementation is available in [dashboard/app.py](../dashboard/app.py), with behavior covered by [dashboard tests](../tests/test_dashboard.py).
 
+### Filter propagation
+
+The date filter establishes the observation window. Store, category and channel selections further restrict the sales frame. KPI totals, product rankings and store summaries are then calculated from that filtered frame. Forecast preparation receives the same scope instead of displaying an unrelated global forecast. Problem records are date-filtered where their evidence supports the same temporal interpretation.
+
+### Information hierarchy
+
+The dashboard places summary KPIs before detailed tables so a user can recognise overall scale and then investigate. Model panels show both selected results and evaluation context. ETL history appears separately from business performance because a successful load and a successful sales period are different concepts.
+
+### Presentation quality controls
+
+The Streamlit script harness executes the complete application, confirms seven tabs and prevents regressions in the short-range notice. Browser-specific accessibility and responsive-layout testing remain limitations. A production dashboard should additionally validate keyboard navigation, contrast, screen-reader labels, download permissions and performance under concurrent users.
+
 <div class="page-break"></div>
 
 ## Page 27 of 30 — Testing, Verification and Measured Results
@@ -766,6 +1290,53 @@ The dashboard distinguishes descriptive KPIs, forecast estimates, cluster profil
 ### Automated test suite
 
 The complete suite passes 25 tests. Coverage includes deterministic generation across Python hash seeds, calendar correctness, manifest and label hashes, type/range/reference validation, basket quarantine, duplicate handling, historical prefixes, public adapters, multi-sheet UCI import, rolling-backtest chronology, precision/recall calculations, loaded SQL counts, replay behavior, SCD Type 2 behavior and full Streamlit execution.
+
+### Test and verification graph
+
+```mermaid
+flowchart TB
+    CHANGE[Code data or configuration change] --> UNIT[Foundation and validation tests]
+    CHANGE --> ADAPTER[Public-adapter tests]
+    CHANGE --> MODEL[Forecast and anomaly tests]
+    CHANGE --> SQL[SQL integration tests]
+    CHANGE --> DASH[Dashboard harness tests]
+
+    UNIT --> GATE{All automated tests pass?}
+    ADAPTER --> GATE
+    MODEL --> GATE
+    SQL --> GATE
+    DASH --> GATE
+
+    GATE -->|No| FIX[Investigate and correct regression]
+    FIX --> CHANGE
+    GATE -->|Yes| VERIFY[Run read-only warehouse verification]
+    VERIFY --> COUNTS[Counts and date coverage]
+    VERIFY --> GRAINS[Duplicate grains and foreign keys]
+    VERIFY --> FORMULAS[Sales formulas and reconciliation]
+    VERIFY --> HISTORY[SCD intervals and temporal joins]
+    VERIFY --> QUERIES[OLAP quality and reporting SQL]
+    COUNTS --> RELEASE{Verification passes?}
+    GRAINS --> RELEASE
+    FORMULAS --> RELEASE
+    HISTORY --> RELEASE
+    QUERIES --> RELEASE
+    RELEASE -->|No| FIX
+    RELEASE -->|Yes| EVIDENCE[Publish JSON reports documentation and dashboard]
+```
+
+### Evidence graph
+
+```mermaid
+flowchart LR
+    TESTS[25 passing tests] --> CLAIM[Defensible project claim]
+    VERIFY[Warehouse verification JSON] --> CLAIM
+    ETL[ETL run reports] --> CLAIM
+    ANALYTICS[Analytics report and CSV artifacts] --> CLAIM
+    CODE[SQL and Python source] --> CLAIM
+    CLAIM --> REPORT[30-page academic report]
+    CLAIM --> PRESENTATION[Six-slide presentation]
+    CLAIM --> README[README and wiki links]
+```
 
 ### Warehouse verification
 
@@ -800,6 +1371,26 @@ Verification found zero duplicate fact grains, orphaned sales facts, sales formu
 
 This combination of structural, behavioral and analytical verification is stronger than reporting only a model score or screenshot.
 
+### Test categories
+
+| Test module | Main responsibility |
+| --- | --- |
+| `test_foundation.py` | Generation, manifests, validation and core configuration |
+| `test_public_adapters.py` | Walmart and UCI normalisation, including multi-sheet import |
+| `test_forecasting.py` | Chronological folds, model evaluation and forecasts |
+| `test_anomalies.py` | Ground-truth handling and anomaly metrics |
+| `test_analytics_outputs.py` | Artifact structure and analytical output integrity |
+| `test_sql_integration.py` | Live counts, repeatability, constraints and SCD behavior |
+| `test_dashboard.py` | Streamlit execution, tabs and short-range fallback |
+
+### Verification depth
+
+Unit-level tests check isolated behavior, while integration tests connect Python with SQL Server and persisted warehouse state. Machine-readable JSON reports support automated inspection, and the human-readable verification report summarises the evidence. The dashboard harness tests execution but is not presented as visual-accessibility certification.
+
+### Regression value
+
+Tests protect decisions made during development. A later change to forecast configuration should not reintroduce the short-range traceback. A change to the generator should not break determinism or label hashes. A change to dimension loading should not create overlapping product versions. In this way, the suite becomes executable project memory.
+
 <div class="page-break"></div>
 
 ## Page 28 of 30 — Self-Learning, Teamwork and 48-Hour Activity Log
@@ -833,6 +1424,20 @@ This combination of structural, behavioral and analytical verification is strong
 | Chinmay Gowda J | 1GA24CI0XX | Domain study, implementation review, verification, documentation and presentation preparation |
 
 Work was organised around data modelling, ETL, analytics, dashboard review and reporting. GitHub changes, test results and dashboard demonstrations supported coordination. Technical disagreements were resolved by comparing alternatives against data preservation, traceability and verification. The decision to append safely prefixed historical records rather than overwrite the existing period is one example of this evidence-based teamwork.
+
+### Weekly evidence and reflection
+
+Each six-hour week combined reading, implementation and review rather than counting passive study alone. Early weeks produced architecture and data-model evidence. Middle weeks produced validation, ETL and OLAP evidence. Later weeks produced model artifacts, metrics, dashboard behavior and documentation. This progression reflects increasing integration: later tasks depended on the correctness of earlier design decisions.
+
+### Collaboration practices
+
+- Tasks were separated by concern while shared definitions such as grain and metric meaning were reviewed together.
+- Repository changes provided a visible record of implementation and documentation work.
+- Test results were used to resolve claims about behavior instead of relying only on screenshots.
+- Limitations were documented as part of completion rather than treated as weaknesses to remove from the report.
+- The six-slide presentation was designed from the longer evidence base so summary claims remain consistent with the report.
+
+Both students are recorded with joint project responsibilities because a more specific individual split was not supplied. Institutional submission should preserve only contribution statements that both students can verify.
 
 <div class="page-break"></div>
 
@@ -871,6 +1476,22 @@ UCI invoice lines can support real basket, RFM, cancellation and line-level anal
 
 The roadmap favours correctness and source compatibility over forcing every dataset into one impressive but misleading model.
 
+### Risk and ethics register
+
+| Risk | Possible impact | Recommended treatment |
+| --- | --- | --- |
+| Synthetic result presented as real | Misleading academic or business claim | Keep provenance notices beside metrics |
+| Public dataset licence ignored | Legal and ethical non-compliance | Record source, DOI and terms before use |
+| Customer segmentation misused | Unfair or intrusive targeting | Apply consent, access control and fairness review |
+| Anomaly flag treated as guilt | Harmful action based on weak evidence | Require human investigation and outcome logging |
+| Forecast used without uncertainty | Overconfident planning | Add intervals and scenario analysis |
+| Secrets committed to Git | Credential exposure | Use environment management and secret scanning |
+| Unauthenticated dashboard deployed | Unauthorised data access | Add identity, roles and audit logging |
+
+### Roadmap dependencies
+
+Security and provenance should precede real-data deployment. CI/CD should precede frequent collaborative releases. Prediction intervals require forecast-validation changes as well as new visual design. Review-outcome logging should precede supervised anomaly improvement because reliable labels are needed. This dependency-aware roadmap avoids treating future work as an unordered feature list.
+
 <div class="page-break"></div>
 
 ## Page 30 of 30 — Reflection, Conclusion, References and Reproduction
@@ -886,6 +1507,8 @@ An important lesson was that technical accuracy and transparency must be develop
 ### Conclusion
 
 The project achieved its educational objectives by delivering a verified fifteen-year retail warehouse, repeatable ETL, multiple mining methods, operational problem detection and a filter-aware dashboard. The strongest result is the integration of lineage, validation, modelling, evaluation and communication. The platform is suitable for academic demonstration and future extension, while its limitations prevent unsupported production claims.
+
+The work also demonstrates a general lesson for data projects: correctness is distributed across the entire lifecycle. A valid SQL schema cannot compensate for unauthenticated input, and a sophisticated model cannot compensate for leakage. A polished dashboard cannot compensate for unreconciled measures. By connecting these layers through audit records, tests and documentation, the project creates a defensible foundation that can be extended when suitable real data and operational requirements become available.
 
 ### Selected references
 
