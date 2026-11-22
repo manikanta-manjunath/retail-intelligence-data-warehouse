@@ -14,6 +14,8 @@
   <a href="#-tech-stack"><img src="https://img.shields.io/github/languages/top/manikanta-manjunath/retail-intelligence-data-warehouse?style=for-the-badge&amp;logo=python&amp;logoColor=E6F7FF&amp;labelColor=07111F&amp;color=EC4899" alt="Primary repository language" /></a>
   <a href="#-testing--verification"><img src="https://img.shields.io/badge/TESTS-25%2F25%20PASSING-10B981?style=for-the-badge&amp;logo=pytest&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Twenty-five automated tests passing" /></a>
   <a href="#-live-demo--visual-intelligence"><img src="https://img.shields.io/badge/DEMO-LOCAL%20HUD-F59E0B?style=for-the-badge&amp;logo=streamlit&amp;logoColor=07111F&amp;labelColor=07111F" alt="Local Streamlit dashboard demo" /></a>
+  <a href="docs/STUDENT_LEARNING_REPORT.md"><img src="https://img.shields.io/badge/REPORT-30%20PAGES-8B5CF6?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Professional thirty-page student learning report" /></a>
+  <a href="docs/STUDENT_LEARNING_PRESENTATION.md"><img src="https://img.shields.io/badge/PRESENTATION-6%20SLIDES-EC4899?style=for-the-badge&amp;logo=slides&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Six-slide Markdown presentation" /></a>
   <a href="LICENSES_AND_DATA_SOURCES.md"><img src="https://img.shields.io/badge/LICENSE-EDUCATIONAL%20%2F%20SOURCE--SPECIFIC-22D3EE?style=for-the-badge&amp;labelColor=07111F" alt="Educational and source-specific licensing" /></a>
 </p>
 
@@ -29,6 +31,8 @@
   <a href="wiki/index.md"><strong>DOCS</strong></a>
   <code>◆</code>
   <a href="docs/STUDENT_LEARNING_REPORT.md"><strong>REPORT</strong></a>
+  <code>◆</code>
+  <a href="docs/STUDENT_LEARNING_PRESENTATION.md"><strong>PRESENTATION</strong></a>
 </p>
 
 <sub><code>SYS.STATUS: VERIFIED</code> · <code>WAREHOUSE: 2010–2024</code> · <code>MODE: EDUCATIONAL</code></sub>
@@ -41,13 +45,14 @@
 
 | Scene | Destination | Scene | Destination |
 | --- | --- | --- | --- |
-| `01` | [Overview](#-overview) | `08` | [Usage](#-usage) |
-| `02` | [System Capabilities](#-system-capabilities) | `09` | [Project Structure](#-project-structure) |
-| `03` | [Live Demo](#-live-demo--visual-intelligence) | `10` | [Testing](#-testing--verification) |
-| `04` | [Tech Stack](#-tech-stack) | `11` | [Roadmap](#-roadmap) |
-| `05` | [Architecture](#-architecture) | `12` | [Team](#-team) |
-| `06` | [Workflow](#-workflow-timeline) | `13` | [Contributing](#-contributing) |
-| `07` | [Getting Started](#-getting-started) | `14` | [License](#-license) |
+| `01` | [Overview](#-overview) | `09` | [Usage](#-usage) |
+| `02` | [Academic Deliverables](#-academic-deliverables) | `10` | [Project Structure](#-project-structure) |
+| `03` | [System Capabilities](#-system-capabilities) | `11` | [Testing](#-testing--verification) |
+| `04` | [Live Demo](#-live-demo--visual-intelligence) | `12` | [Roadmap](#-roadmap) |
+| `05` | [Tech Stack](#-tech-stack) | `13` | [Team](#-team) |
+| `06` | [Architecture](#-architecture) | `14` | [Contributing](#-contributing) |
+| `07` | [Workflow](#-workflow-timeline) | `15` | [License](#-license) |
+| `08` | [Getting Started](#-getting-started) | `16` | [Project Wiki](wiki/index.md) |
 
 <img src="assets/divider-wave.svg" width="100%" alt="Animated gradient data-wave divider" />
 
@@ -96,6 +101,37 @@
 </details>
 
 <img src="assets/divider-neon.svg" width="100%" alt="Animated pulsing neon divider" />
+
+## 🎓 Academic Deliverables
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <h3>📘 Professional 30-Page Report</h3>
+      <p>A detailed A4-ready self-learning and teamwork report containing <strong>14,000+ words</strong>, explicit page breaks, verified preprocessing examples, ten Mermaid diagrams, warehouse design, ETL, analytics, testing, teamwork, limitations, reflection and reproduction guidance.</p>
+      <a href="docs/STUDENT_LEARNING_REPORT.md">
+        <img src="https://img.shields.io/badge/OPEN%20THE%20REPORT-30%20PAGES-8B5CF6?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Open the professional thirty-page student learning report" />
+      </a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <h3>🎞️ Six-Slide Presentation</h3>
+      <p>A Marp-compatible Markdown presentation covering the retail problem, system architecture, 48-hour learning process, verified analytical results, dashboard decision support and future roadmap.</p>
+      <a href="docs/STUDENT_LEARNING_PRESENTATION.md">
+        <img src="https://img.shields.io/badge/OPEN%20PRESENTATION-6%20SLIDES-EC4899?style=for-the-badge&amp;logo=slides&amp;logoColor=E6F7FF&amp;labelColor=07111F" alt="Open the six-slide Markdown presentation" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<div align="center">
+  <a href="docs/VERIFICATION_REPORT.md"><strong>Verification Report</strong></a>
+  <code>◆</code>
+  <a href="wiki/index.md"><strong>Project Wiki</strong></a>
+  <code>◆</code>
+  <a href="docs/ARCHITECTURE.md"><strong>Architecture Reference</strong></a>
+</div>
+
+<img src="assets/divider-spectrum.svg" width="100%" alt="Animated spectrum divider after academic deliverables" />
 
 ## ⚡ System Capabilities
 

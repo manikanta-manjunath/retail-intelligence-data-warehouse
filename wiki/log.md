@@ -26,3 +26,4 @@ Entries are append-only and use the format `## [YYYY-MM-DD] operation | subject`
 - Deepened the report to 14,000+ words and added preprocessing samples plus project, warehouse, ETL, analytics, dashboard, testing and evidence graphs rendered with Mermaid.
 - Redesigned the repository README with an animated hero, verified badges, responsive demo placeholders, tech-stack icons, Mermaid architecture, collapsible setup guidance, roadmap, team table and animated footer.
 - Rebuilt the README as a six-color sci-fi HUD landing page and added eleven repository-owned SMIL SVG assets for rings, scans, particles, progress bars and section transitions.
+- Added a prominent Academic Deliverables scene to the README with direct badges and cards for the professional 30-page report and six-slide presentation.
