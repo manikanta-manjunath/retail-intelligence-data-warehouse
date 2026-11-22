@@ -12,7 +12,9 @@ description: Six-slide presentation for Data Mining and Data Warehousing
 
 **15-Year Data Warehouse, Analytics and Dashboard**
 
-`[Student Name]` · `[USN]` · B.E. CSE (AI & ML)
+**Manikanta M** · 1GA24CI069<br>
+**Chinmay Gowda J** · 1GA24CI0XX<br>
+B.E. CSE (AI & ML)
 
 **Problem:** Retail data is distributed across sales, inventory, products, stores, customers, promotions and suppliers.
 

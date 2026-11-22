@@ -4,9 +4,10 @@
 
 **Project title:** Retail Intelligence Data Warehouse and Analytics Platform
 
-**Submitted by:** `[Student Name]`
-
-**USN:** `[University Seat Number]`
+| Submitted by | USN |
+| --- | --- |
+| Manikanta M | 1GA24CI069 |
+| Chinmay Gowda J | 1GA24CI0XX |
 
 **Programme:** Bachelor of Engineering — Computer Science and Engineering (AI & ML)
 
@@ -25,7 +26,7 @@ This report documents 48 hours of structured self-learning and collaborative wor
 
 The verified warehouse contains 15 years of calendar and sales coverage from 2010 through 2024, 182,176 sales lines, 73,213 transactions, 18,000 inventory snapshots and 4,800 shipment facts. The project also demonstrates repeatable ETL: replaying the historical input inserted zero duplicate facts. Forecast selection uses five rolling-origin backtests and an unseen test period, while anomaly precision and recall are reported only against authenticated synthetic injected labels.
 
-The activity strengthened my understanding of dimensional modelling, fact grain, ETL reliability, preprocessing, clustering, association analysis, forecasting, anomaly evaluation, documentation and teamwork. It also taught me to distinguish technically correct outputs from defensible claims by documenting data provenance, limitations and reproducibility.
+The activity strengthened our understanding of dimensional modelling, fact grain, ETL reliability, preprocessing, clustering, association analysis, forecasting, anomaly evaluation, documentation and teamwork. It also taught us to distinguish technically correct outputs from defensible claims by documenting data provenance, limitations and reproducibility.
 
 ---
 
@@ -84,7 +85,7 @@ The purpose of this activity was to transform classroom concepts into a reproduc
 
 The team objective was to develop a reliable retail intelligence platform that converts raw sales, inventory and supplier records into an audited warehouse, analytical models and an understandable dashboard.
 
-### My role and responsibilities
+### Team roles and responsibilities
 
 - Studied the retail domain and translated business events into fact-table grains.
 - Contributed to the data model, SQL objects and ETL workflow.
@@ -101,9 +102,14 @@ Work was divided into data modelling, ETL, analytics, dashboard and documentatio
 
 When choosing between replacing the existing warehouse and appending historical records, the team selected a non-destructive approach. Historical business keys received safe prefixes, existing 2023–2024 facts were preserved, and the combined result was verified as a continuous 2010–2024 dataset. This decision reduced risk and made repeatability measurable.
 
-### Contribution of other team members
+### Team-member contribution record
 
-`[Add each team member's name and factual contribution here. Do not assign work that the person did not perform.]`
+| Team member | USN | Verified contribution |
+| --- | --- | --- |
+| Manikanta M | 1GA24CI069 | `[Enter the work completed by Manikanta M]` |
+| Chinmay Gowda J | 1GA24CI0XX | `[Enter the work completed by Chinmay Gowda J]` |
+
+Only factual contributions supported by repository history or other genuine evidence should be entered above.
 
 ### Outcome of teamwork
 
@@ -258,11 +264,11 @@ All 25 automated tests passed, including SQL integration, idempotency, SCD behav
 
 ## 11. Overall Reflection and Conclusion
 
-Completing the 48-hour activity significantly improved my ability to connect data-mining theory with an end-to-end engineering system. Initially, I viewed a data warehouse mainly as a collection of fact and dimension tables. Through implementation, I learned that grain definition, source authentication, referential integrity, historical handling and reconciliation are equally important. Building the ETL pipeline strengthened my practical understanding of validation, staging, idempotency and auditability.
+Completing the 48-hour activity significantly improved our ability to connect data-mining theory with an end-to-end engineering system. Initially, we viewed a data warehouse mainly as a collection of fact and dimension tables. Through implementation, we learned that grain definition, source authentication, referential integrity, historical handling and reconciliation are equally important. Building the ETL pipeline strengthened our practical understanding of validation, staging, idempotency and auditability.
 
-The analytical work also changed how I interpret model results. I learned to use chronological evaluation for forecasting, silhouette score for clustering, and precision, recall and F1 for labelled anomaly evaluation. More importantly, I learned to state limitations clearly when data is synthetic or labels represent only one anomaly type. Teamwork improved my communication, task planning, code-review and documentation skills. Using GitHub and an interlinked project wiki made decisions and evidence easier to review.
+The analytical work also changed how we interpret model results. We learned to use chronological evaluation for forecasting, silhouette score for clustering, and precision, recall and F1 for labelled anomaly evaluation. More importantly, we learned to state limitations clearly when data is synthetic or labels represent only one anomaly type. Teamwork improved our communication, task planning, code-review and documentation skills. Using GitHub and an interlinked project wiki made decisions and evidence easier to review.
 
-In future, I would integrate UCI and Kaggle data into separate source-specific marts, add confidence intervals, improve category-level anomaly models, implement GitHub Actions and deploy a secure demonstration. Overall, the activity developed independent learning, practical problem-solving and professional responsibility.
+In future, we would integrate UCI and Kaggle data into separate source-specific marts, add confidence intervals, improve category-level anomaly models, implement GitHub Actions and deploy a secure demonstration. Overall, the activity developed independent learning, practical problem-solving and professional responsibility.
 
 ---
 
@@ -303,11 +309,15 @@ docker compose up -d
 
 ## 13. Declaration and Verification
 
-I declare that this report accurately represents the self-learning and teamwork activities completed by me. I have verified the recorded hours and have included only evidence that can be authenticated. I understand that all synthetic and public datasets must be described with their correct provenance and limitations.
+We declare that this report accurately represents the self-learning and teamwork activities completed by us. We have verified the recorded hours and have included only evidence that can be authenticated. We understand that all synthetic and public datasets must be described with their correct provenance and limitations.
 
-| Student | Faculty verification |
+| Student | USN | Signature | Date |
+| --- | --- | --- | --- |
+| Manikanta M | 1GA24CI069 | ____________________ | `[DD/MM/YYYY]` |
+| Chinmay Gowda J | 1GA24CI0XX | ____________________ | `[DD/MM/YYYY]` |
+
+| Faculty verification | Details |
 | --- | --- |
-| **Name:** `[Student Name]` | **Remarks:** `[Faculty Remarks]` |
-| **USN:** `[USN]` | **Faculty signature:** ____________________ |
-| **Signature:** ____________________ | **Date:** `[DD/MM/YYYY]` |
-| **Date:** `[DD/MM/YYYY]` |  |
+| Remarks | `[Faculty Remarks]` |
+| Faculty signature | ____________________ |
+| Date | `[DD/MM/YYYY]` |
