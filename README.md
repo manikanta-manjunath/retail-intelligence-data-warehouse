@@ -23,7 +23,7 @@ For topic-oriented, interlinked documentation, start with the [project wiki](wik
 
 ## Student learning deliverables
 
-- [Professional self-learning and teamwork report](docs/STUDENT_LEARNING_REPORT.md) — a complete 48-hour academic report based on the verified project, with student details and clearly marked contribution, signature and evidence placeholders.
+- [Professional 30-page self-learning and teamwork report](docs/STUDENT_LEARNING_REPORT.md) — an A4-ready, page-delimited 48-hour academic report grounded in the verified project, with student, declaration, technical, teamwork, reflection and reproduction sections.
 - [Six-slide Markdown presentation](docs/STUDENT_LEARNING_PRESENTATION.md) — a Marp-compatible presentation covering the problem, architecture, learning process, results, dashboard and future work.
 
 Before academic submission, complete all bracketed contribution, date and verification placeholders and attach only genuine personal, team and certificate evidence.
